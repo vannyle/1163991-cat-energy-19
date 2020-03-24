@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vanny Le](https://up.htmlacademy.ru/adaptive/19/user/1163991).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Полозова](https://htmlacademy.ru/profile/id258631).
 
 ---
 
