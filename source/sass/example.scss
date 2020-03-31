@@ -1,0 +1,28 @@
+.example {
+  background-color: #f2f2f2;
+
+  &__rate {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rate-cat {
+    flex-basis: 124px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__rate-number {
+    font-family: $font-family-title;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+  }
+}

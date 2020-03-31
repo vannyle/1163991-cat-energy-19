@@ -1,0 +1,35 @@
+$text-color: #444444;
+$font-family: "Arial", sans-serif;
+$font-family-title: "Oswald", "Arial", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.row {
+  margin: 0 20px;
+}
+
+h2,
+h3 {
+  font-family: $font-family-title;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
