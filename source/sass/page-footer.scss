@@ -1,0 +1,22 @@
+.page-footer {
+  text-align: center;
+
+  &__social {
+    list-style: none;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    text-decoration: none;
+  }
+}

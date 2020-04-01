@@ -1,0 +1,17 @@
+.address {
+  &__header {
+    display: flex;
+    align-items: center;
+    min-height: 57px;
+  }
+
+  &__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.25;
+  }
+
+  &__info {
+    line-height: 1.43;
+  }
+}

@@ -20,9 +20,17 @@
     text-transform: uppercase;
   }
 
+  &__cat {
+    text-align: center;
+  }
+
   &__price {
     text-transform: uppercase;
     font-weight: 400;
-    text-align: center;
+  }
+
+  &__before-after {
+    display: flex;
+    justify-content: space-around;
   }
 }

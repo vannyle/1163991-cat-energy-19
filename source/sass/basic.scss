@@ -1,3 +1,4 @@
+$title-color: #ffffff;
 $text-color: #444444;
 $font-family: "Arial", sans-serif;
 $font-family-title: "Oswald", "Arial", sans-serif;
@@ -18,10 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-.row {
-  margin: 0 20px;
-}
-
 h2,
 h3 {
   font-family: $font-family-title;
@@ -30,6 +27,27 @@ h3 {
 h2 {
   font-size: 36px;
   font-weight: 400;
-  margin-bottom: 30px;
-  padding-top: 30px;
+  padding: 30px 0;
+}
+
+.row {
+  margin: 0 20px;
+}
+
+section {
+  padding-bottom: 30px;
+}
+
+.button {
+  font-family: $font-family-title;
+  min-width: 280px;
+  border: none;
+  background-color: #68b738;
+  color: $title-color;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  line-height: 1.3;
+
+  display: inline-flex;
+  justify-content: center;
 }

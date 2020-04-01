@@ -1,0 +1,52 @@
+$border-color: #ededed;
+
+.products {
+  &__title {
+    color: #111111;
+    letter-spacing: -3px;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__container {
+    padding: 0 0 25px;
+    border-bottom: 1px solid $border-color;
+
+    flex-basis: 320px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  &__order {
+    font-size: 16px;
+  }
+
+  &__to-all {
+    text-align: center;
+  }
+
+  &__more-items {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: -1px;
+    margin: 80px 0 10px;
+  }
+
+  &__all-button {
+    color: $text-color;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
