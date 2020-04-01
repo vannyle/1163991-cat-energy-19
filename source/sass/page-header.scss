@@ -1,17 +1,39 @@
 .page-header {
   min-height: 65px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav {
+  align-self: center;
+  width: 100%;
+
   &__toggle {
     border: none;
+    background-color: #ffffff;
+    outline: none;
   }
 
   &__list {
-    display: none;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    padding: 15px 0;
+    border-top: $border-line;
+  }
+
+  &__link {
+    font-family: $font-family-title;
+    font-size: 20px;
+    color: #111111;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
   }
 }

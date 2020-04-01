@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 320px;
     height: 305px;
     text-align: center;
     color: $title-color;
@@ -23,11 +22,12 @@
     list-style: none;
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   &__item {
-    background-color: #f2f2f2;
+    background-color: $bgc-grey;
     padding: 0 20px;
     margin-bottom: 20px;
     min-height: 270px;

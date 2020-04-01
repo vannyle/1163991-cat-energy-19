@@ -1,4 +1,7 @@
 .address {
+
+  padding-bottom: 0;
+
   &__header {
     display: flex;
     align-items: center;
@@ -13,5 +16,9 @@
 
   &__info {
     line-height: 1.43;
+  }
+
+  &__map {
+    text-align: center;
   }
 }

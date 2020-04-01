@@ -2,26 +2,31 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог продукции Cat Energy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header row">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
-  </a>
-  <nav class="nav">
-    <button class="nav__toggle" type="button"><img src="img/icon-mobile-menu.svg" width="25" height="19" alt="Меню">
+<header class="page-header">
+  <div class="page-header__container row">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
+    </a>
+    <button class="nav__toggle" type="button">
+      <img src="img/icon-close.svg" width="25" height="19" alt="Меню">
     </button>
-    <ul class="nav__list site-list">
-      <li class="site-list__item">
-        <a>Главная</a>
+  </div>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="index.html">Главная</a>
       </li>
-      <li class="site-list__item">
-        <a href="catalog.html">Каталог продукции</a>
+      <li class="nav__item">
+        <a class="nav__link" href="catalog.html">Каталог продукции</a>
       </li>
-      <li class="site-list__item">
-        <a href="form.html">Подбор программы</a>
+      <li class="nav__item">
+        <a class="nav__link" href="form.html">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -255,18 +260,18 @@
       <p>Закажите все и получите чехол для кота в подарок!</p>
     </div>
   </section>
-  <section class="address row">
-    <div class="address__header">
+  <section class="address">
+    <div class="address__header row">
       <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
       <p class="address__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <div class="address__map">
-      <img class="address__map-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Карта">
+      <img class="address__map-image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
     </div>
   </section>
 </main>
-<footer class="page-footer row">
-  <div class="page-footer__wrapper">
+<footer class="page-footer">
+  <div class="page-footer__wrapper row">
     <a class="page-footer__logo" href="#">
       <img src="img/index/footer-logo.png" width="128" height="24" alt="Логотип Кэт Энерджи">
     </a>

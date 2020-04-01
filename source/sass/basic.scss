@@ -1,7 +1,10 @@
+$font-family: "Arial", "Helvetica", sans-serif;
+$font-family-title: "Oswald", "Arial", sans-serif;
 $title-color: #ffffff;
 $text-color: #444444;
-$font-family: "Arial", sans-serif;
-$font-family-title: "Oswald", "Arial", sans-serif;
+$bgc-grey: #f2f2f2;
+$border-line: 1px solid #ededed;
+$btn-color: #68b738;
 
 * {
   margin: 0;
@@ -42,7 +45,7 @@ section {
   font-family: $font-family-title;
   min-width: 280px;
   border: none;
-  background-color: #68b738;
+  background-color: $btn-color;
   color: $title-color;
   padding: 15px 50px;
   text-transform: uppercase;
