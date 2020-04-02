@@ -1,36 +1,36 @@
 .example {
   background-color: $bgc-grey;
+}
 
-  &__rate {
-    display: flex;
-    justify-content: space-between;
-  }
+.example__rate {
+  display: flex;
+  justify-content: space-between;
+}
 
-  &__rate-cat {
-    flex-basis: 124px;
-    padding: 20px;
-    text-align: center;
-  }
+.example__rate-cat {
+  flex-basis: 124px;
+  padding: 20px;
+  text-align: center;
+}
 
-  &__rate-number {
-    font-family: $font-family-title;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
+.example__rate-number {
+  font-family: $font-family-title;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
 
-  &__cat {
-    text-align: center;
-  }
+.example__cat {
+  text-align: center;
+}
 
-  &__price {
-    text-transform: uppercase;
-    font-weight: 400;
-  }
+.example__price {
+  text-transform: uppercase;
+  font-weight: 400;
+}
 
-  &__before-after {
-    display: flex;
-    justify-content: space-around;
-  }
+.example__before-after {
+  display: flex;
+  justify-content: space-around;
 }

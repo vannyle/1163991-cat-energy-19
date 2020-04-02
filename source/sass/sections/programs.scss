@@ -1,68 +1,67 @@
-.programs {
-  &__header {
-    background-image: url("../../img/gift-photo-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 305px;
-    text-align: center;
-    color: $title-color;
-  }
-
-  &__title {
-    line-height: 1;
-  }
-
-  &__slogan {
-    padding-bottom: 30px;
-  }
-
-  &__image {
-    display: block;
-    margin: 0 auto;
-  }
-
-  &__select {
-    text-decoration: none;
-  }
-
-  &__list {
-    margin: 210px 20px 0;
-    list-style: none;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  &__item {
-    background-color: $bgc-grey;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    min-height: 270px;
-    flex-basis: 280px;
-  }
-
-  &__name {
-    font-size: 24px;
-    text-align: center;
-    font-weight: 400;
-    padding: 30px 0;
-  }
-
-  &__description {
-    font-family: "Arial", sans-serif;
-    line-height: 1.3;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #d9d9d9;
-    margin-bottom: 20px;
-  }
-
-  &__link {
-    font-family: $font-family-title;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #111111;
-    font-size: 16px;
-  }
+.programs__header {
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 305px;
+  text-align: center;
+  color: $title-color;
 }
+
+.programs__title {
+  line-height: 1;
+}
+
+.programs__slogan {
+  padding-bottom: 30px;
+}
+
+.programs__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.programs__select {
+  text-decoration: none;
+}
+
+.programs__list {
+  margin: 210px 20px 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.programs__item {
+  background-color: $bgc-grey;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  min-height: 270px;
+  flex-basis: 280px;
+}
+
+.programs__name {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  padding: 30px 0;
+}
+
+.programs__description {
+  font-family: "Arial", sans-serif;
+  line-height: 1.3;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+.programs__link {
+  font-family: $font-family-title;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+}
+
