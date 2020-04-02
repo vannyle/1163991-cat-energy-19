@@ -41,9 +41,8 @@
     <h2 class="selection__title">Подбор программы</h2>
     <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="selection__form form__list" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="form__item pet-info">
-        <legend class="visually-hidden">Данные кота</legend>
-        <ul>
+      <div class="form__item pet-info">
+        <ul class="form__info">
           <li class="pet-info__name">
             <label for="pet-name">Имя:*</label>
             <input type="text" name="name" id="pet-name" placeholder="Барсик" required>
@@ -57,10 +56,9 @@
             <input type="number" name="age" id="pet-age" placeholder="7">
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form__item programs-items">
-        <legend class="visually-hidden">Программы</legend>
-        <ul>
+      </div>
+      <div class="form__item programs-items">
+        <ul class="form__info">
           <li>
             <input type="radio" name="program" value="slim" id="slim-program">
             <label for="slim-program">Похудение</label>
@@ -74,10 +72,10 @@
             <label for="others">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form__item owner-info">
-        <legend>Контактные данные (владельца кота)</legend>
-        <ul>
+      </div>
+      <div class="form__item owner-info">
+        <h3>Контактные данные (владельца кота)</h3>
+        <ul class="form__info">
           <li>
             <label for="email">E-mail:*</label>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -87,16 +85,14 @@
             <input type="number" name="phone" id="phone-number" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form__item comment">
-        <legend>
-          <label for="comment">Комментарий</label>
-        </legend>
-        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
-      </fieldset>
-      <fieldset class="form__item additional">
-        <legend>Дополнительно</legend>
-        <ul>
+      </div>
+      <div class="form__item comment">
+        <label for="comment">Комментарий</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form__item additional">
+        <h3>Дополнительно</h3>
+        <ul class="form__info">
           <li>
             <input type="checkbox" name="option" value="sweetener" id="sweetener">
             <label for="sweetener">Сахарозаменитель</label>
@@ -114,7 +110,7 @@
             <label for="vitamin">Витамины</label>
           </li>
         </ul>
-      </fieldset>
+      </div>
       <button class="selection-form__button" type="submit">Отправить заявку</button>
     </form>
   </section>

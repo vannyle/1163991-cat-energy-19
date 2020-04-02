@@ -15,7 +15,7 @@
 
 .nav__toggle {
   border: none;
-  background-color: #ffffff;
+  background-color: $color-white;
   outline: none;
 }
 
@@ -32,7 +32,7 @@
 .nav__link {
   font-family: $font-family-title;
   font-size: 20px;
-  color: #111111;
+  color: $color-black;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;

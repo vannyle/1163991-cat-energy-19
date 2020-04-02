@@ -1,6 +1,7 @@
 $font-family: "Arial", "Helvetica", sans-serif;
 $font-family-title: "Oswald", "Arial", sans-serif;
-$title-color: #ffffff;
+$color-white: #ffffff;
+$color-black: #111111;
 $text-color: #444444;
 $bgc-grey: #f2f2f2;
 $border-line: 1px solid #ededed;
@@ -62,7 +63,7 @@ section {
   min-width: 280px;
   border: none;
   background-color: $btn-color;
-  color: $title-color;
+  color: $color-white;
   padding: 15px 50px;
   text-transform: uppercase;
   line-height: 1.3;
