@@ -1,0 +1,41 @@
+.page-footer {
+  text-align: center;
+  background-color: $bgc-grey;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social {
+    list-style: none;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 20px 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.copyright {
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 16px;
+  }
+}

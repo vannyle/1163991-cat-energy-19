@@ -2,27 +2,31 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы Cat Energy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="img/index/logo-mobile.png" width="33" height="38" alt="Иконка Кэт Энерджи">
-  </a>
-  <a class="page-header__title" href="index.html">
-    <img class="page-header__title-image" src="img/index/logo-mobile-header.png" width="101" height="18" alt="Логотип Кэт Энерджи">
-  </a>
+  <div class="page-header__container row">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
+    </a>
+    <button class="nav__toggle" type="button">
+      <img src="img/icon-close.svg" width="25" height="19" alt="Меню">
+    </button>
+  </div>
   <nav class="nav">
-    <button class="nav__toggle" type="button">Открыть меню</button>
-    <ul class="nav__list site-list">
-      <li class="site-list__item">
-        <a>Главная</a>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="index.html">Главная</a>
       </li>
-      <li class="site-list__item">
-        <a href="catalog.html">Каталог продукции</a>
+      <li class="nav__item">
+        <a class="nav__link" href="catalog.html">Каталог продукции</a>
       </li>
-      <li class="site-list__item">
-        <a href="form.html">Подбор программы</a>
+      <li class="nav__item">
+        <a class="nav__link" href="form.html">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -112,11 +116,11 @@
   </section>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="#">
+  <div class="page-footer__wrapper row">
+    <a class="page-footer__logo page-footer__item" href="#">
       <img src="img/index/footer-logo.png" width="128" height="24" alt="Логотип Кэт Энерджи">
     </a>
-    <ul class="page-footer_social social">
+    <ul class="page-footer__social page-footer__item social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
       </li>
@@ -127,8 +131,8 @@
         <a class="social__link social__link--facebook" href="#">Фейсбук</a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright page-footer__item copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/index/htmlacademy.png" width="27" height="34" alt="Логотип HTML Academy">
       </a>
