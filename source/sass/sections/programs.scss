@@ -1,6 +1,6 @@
 .programs {
   &__header {
-    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-image: url("../../img/gift-photo-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,6 +15,10 @@
 
   &__slogan {
     padding-bottom: 30px;
+  }
+
+  &__select {
+    text-decoration: none;
   }
 
   &__list {

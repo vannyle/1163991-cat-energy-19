@@ -19,6 +19,18 @@
   }
 
   &__map {
-    text-align: center;
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    height: 360px;
+  }
+
+  &__map-item {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
   }
 }
