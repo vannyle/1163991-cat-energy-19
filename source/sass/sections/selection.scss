@@ -1,7 +1,13 @@
-.selection__description {
-  font-family: $font-family-title;
-  color: $color-black;
+.selection {
   text-transform: uppercase;
+  font-size: 16px;
+  font-family: $font-family-title;
+  color: $color-dark;
+}
+
+.selection__description {
+  color: $color-black;
+  font-size: 14px;
 }
 
 .form__info {
@@ -11,4 +17,12 @@
 
 .form__title {
   font-size: 24px;
+}
+
+.form__item {
+  & input::placeholder,
+  & textarea::placeholder {
+    font-family: $font-family-title;
+    text-transform: uppercase;
+  }
 }
