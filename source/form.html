@@ -74,7 +74,7 @@
         </ul>
       </div>
       <div class="form__item owner-info">
-        <h3>Контактные данные (владельца кота)</h3>
+        <h3 class="form__title">Контактные данные (владельца кота)</h3>
         <ul class="form__info">
           <li>
             <label for="email">E-mail:*</label>
@@ -87,11 +87,12 @@
         </ul>
       </div>
       <div class="form__item comment">
-        <label for="comment">Комментарий</label>
-        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <label for="comment"><h3 class="form__title">Комментарий</h3></label>
+        <textarea name="comment" id="comment" cols="30" rows="10"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
       <div class="form__item additional">
-        <h3>Дополнительно</h3>
+        <h3 class="form__title">Дополнительно</h3>
         <ul class="form__info">
           <li>
             <input type="checkbox" name="option" value="sweetener" id="sweetener">
@@ -111,7 +112,7 @@
           </li>
         </ul>
       </div>
-      <button class="selection-form__button" type="submit">Отправить заявку</button>
+      <button class="selection-form__button button" type="submit">Отправить заявку</button>
     </form>
   </section>
 </main>

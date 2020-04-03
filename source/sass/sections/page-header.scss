@@ -6,6 +6,7 @@
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: $border-line;
 }
 
 .nav {
@@ -26,7 +27,7 @@
 
 .nav__item {
   padding: 15px 0;
-  border-top: $border-line;
+  border-bottom: $border-line;
 }
 
 .nav__link {

@@ -1,3 +1,14 @@
-.form_info {
+.selection__description {
+  font-family: $font-family-title;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.form__info {
   list-style: none;
+  padding: 30px 0;
+}
+
+.form__title {
+  font-size: 24px;
 }
