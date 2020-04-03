@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы Cat Energy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
   <div class="page-header__container row">
     <a class="page-header__logo" href="index.html">
+      <!--      <picture>-->
+      <!--        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">-->
+      <!--        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">-->
+      <!--        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип">-->
+      <!--      </picture>-->
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
     </a>
     <button class="nav__toggle" type="button">
@@ -33,13 +37,12 @@
 </header>
 <main>
   <h1 class="visually-hidden">Подбор программы Cat Energy</h1>
-  <section class="selection">
+  <section class="selection row">
     <h2 class="selection__title">Подбор программы</h2>
     <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <form class="selection__form form-list" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="form-item pet-info">
-        <legend class="visually-hidden">Данные кота</legend>
-        <ul>
+    <form class="selection__form form__list" action="https://echo.htmlacademy.ru" method="get">
+      <div class="form__item pet-info">
+        <ul class="form__info">
           <li class="pet-info__name">
             <label for="pet-name">Имя:*</label>
             <input type="text" name="name" id="pet-name" placeholder="Барсик" required>
@@ -53,10 +56,9 @@
             <input type="number" name="age" id="pet-age" placeholder="7">
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form-item programs-items">
-        <legend class="visually-hidden">Программы</legend>
-        <ul>
+      </div>
+      <div class="form__item programs-items">
+        <ul class="form__info">
           <li>
             <input type="radio" name="program" value="slim" id="slim-program">
             <label for="slim-program">Похудение</label>
@@ -70,10 +72,10 @@
             <label for="others">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form-item owner-info">
-        <legend>Контактные данные (владельца кота)</legend>
-        <ul>
+      </div>
+      <div class="form__item owner-info">
+        <h3 class="form__title">Контактные данные (владельца кота)</h3>
+        <ul class="form__info">
           <li>
             <label for="email">E-mail:*</label>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -83,16 +85,16 @@
             <input type="number" name="phone" id="phone-number" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form-item comment">
-        <legend>
-          <label for="comment">Комментарий</label>
-        </legend>
-        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
-      </fieldset>
-      <fieldset class="form-item additional">
-        <legend>Дополнительно</legend>
-        <ul>
+      </div>
+      <div class="form__item comment">
+        <h3 class="form__title">Комментарий</h3>
+        <label class="visually-hidden" for="comment">Написать комментарий</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
+      </div>
+      <div class="form__item additional">
+        <h3 class="form__title">Дополнительно</h3>
+        <ul class="form__info">
           <li>
             <input type="checkbox" name="option" value="sweetener" id="sweetener">
             <label for="sweetener">Сахарозаменитель</label>
@@ -110,15 +112,15 @@
             <label for="vitamin">Витамины</label>
           </li>
         </ul>
-      </fieldset>
-    <button class="selection-form__button" type="submit">Отправить заявку</button>
+      </div>
+      <button class="selection-form__button button" type="submit">Отправить заявку</button>
     </form>
   </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper row">
     <a class="page-footer__logo page-footer__item" href="#">
-      <img src="img/index/footer-logo.png" width="128" height="24" alt="Логотип Кэт Энерджи">
+      <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
     </a>
     <ul class="page-footer__social page-footer__item social">
       <li class="social__item">
@@ -134,7 +136,7 @@
     <div class="page-footer__copyright page-footer__item copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/index/htmlacademy.png" width="27" height="34" alt="Логотип HTML Academy">
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </div>

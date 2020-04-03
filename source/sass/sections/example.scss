@@ -1,0 +1,36 @@
+.example {
+  background-color: $bgc-grey;
+}
+
+.example__rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__rate-cat {
+  flex-basis: 124px;
+  padding: 20px;
+  text-align: center;
+}
+
+.example__rate-number {
+  font-family: $font-family-title;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.example__cat {
+  text-align: center;
+}
+
+.example__price {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.example__before-after {
+  display: flex;
+  justify-content: space-around;
+}

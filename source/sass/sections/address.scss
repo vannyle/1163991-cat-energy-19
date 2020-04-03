@@ -1,0 +1,35 @@
+.address {
+  padding-bottom: 0;
+}
+
+.address__header {
+  display: flex;
+  align-items: center;
+  min-height: 57px;
+}
+
+.address__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.address__info {
+  line-height: 1.43;
+}
+
+.address__map {
+  overflow: hidden;
+  padding-bottom: 60%;
+  position: relative;
+  height: 360px;
+}
+
+.address__map-item {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}

@@ -1,0 +1,40 @@
+.page-header {
+  min-height: 65px;
+}
+
+.page-header__container {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $border-line;
+}
+
+.nav {
+  align-self: center;
+  width: 100%;
+}
+
+.nav__toggle {
+  border: none;
+  background-color: $color-white;
+  outline: none;
+}
+
+.nav__list {
+  list-style: none;
+  text-align: center;
+}
+
+.nav__item {
+  padding: 15px 0;
+  border-bottom: $border-line;
+}
+
+.nav__link {
+  font-family: $font-family-title;
+  font-size: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}

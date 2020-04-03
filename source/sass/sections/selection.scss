@@ -1,0 +1,32 @@
+.selection {
+  font-size: 16px;
+  font-family: $font-family-title;
+  color: $color-dark;
+}
+
+.selection__description {
+  color: $color-black;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form__info {
+  list-style: none;
+  padding: 30px 0;
+}
+
+.form__title {
+  font-size: 24px;
+}
+
+.form__item label {
+  text-transform: uppercase;
+}
+
+.form__item {
+  & input::placeholder,
+  & textarea::placeholder {
+    font-family: $font-family-title;
+    text-transform: uppercase;
+  }
+}
