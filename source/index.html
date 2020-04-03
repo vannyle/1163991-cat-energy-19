@@ -9,18 +9,22 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__container row">
+  <div class="page-header__container">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
+      </picture>
     </a>
-    <button class="nav__toggle" type="button">
+    <button class="page-header__toggle" type="button">
       <img src="img/icon-close.svg" width="25" height="19" alt="Меню">
     </button>
   </div>
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
-        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link nav__link--active" href="index.html">Главная</a>
       </li>
       <li class="nav__item">
         <a class="nav__link" href="catalog.html">Каталог продукции</a>
@@ -37,7 +41,11 @@
     <div class="programs__header">
       <h2 class="programs__title">Функциональное питание для котов</h2>
       <p class="programs__slogan">Занялся собой? Займись котом!</p>
-      <img class="programs__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Питание кота">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img class="programs__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Питание кота">
+      </picture>
       <button class="programs__select button" type="button">Подобрать программу</button>
     </div>
     <div class="programs__list">
@@ -97,7 +105,11 @@
       <p class="address__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <div class="address__map">
-      <img class="address__map-image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+      <iframe class="address__map-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1585834926363!5m2!1sru!2slt"
+              width="600" height="450" style="border: 0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0">
+      </iframe>
     </div>
   </section>
 </main>
