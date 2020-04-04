@@ -27,7 +27,6 @@
 
 .example__price {
   font-family: $font-family-title;
-  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   color: $color-black;
@@ -41,5 +40,21 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: $color-white;
+  }
+
+  .example__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .example__price {
+    width: 174px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__cat {
+    background-color: $bgc-grey;
   }
 }

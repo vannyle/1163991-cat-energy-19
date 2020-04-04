@@ -37,3 +37,17 @@
   color: $text-color;
   font-size: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    min-height: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__item {
+    border-bottom: none;
+    width: 162px;
+  }
+}
