@@ -26,11 +26,20 @@
 }
 
 .example__price {
+  font-family: $font-family-title;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: 400;
+  text-align: center;
+  color: $color-black;
 }
 
 .example__before-after {
   display: flex;
   justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $color-white;
+  }
 }

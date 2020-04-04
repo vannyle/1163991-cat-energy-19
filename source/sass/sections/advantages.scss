@@ -2,8 +2,33 @@
   font-family: "Arial", sans-serif;
   list-style: none;
   margin-left: 80px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__item {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    border: $border-line;
+  }
+
+  .advantages__list {
+    margin-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    margin-top: 120px;
+    margin-bottom: 70px;
+    flex-basis: 220px;
+
+    &:nth-child(2n+1) {
+      margin-right: 180px;
+    }
+  }
 }

@@ -80,8 +80,8 @@
   }
 
   .programs__title {
-    font-size: 60px;
     width: 415px;
+    margin-top: 30px;
   }
 
   .programs__slogan {
@@ -94,6 +94,30 @@
     width: 709px;
     height: 609px;
     top: 220px;
-    left: 30px;
+    left: 0;
+  }
+
+  .programs__item {
+    min-width: 708px;
+    min-height: 372px;
+    padding: 50px 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .programs__name {
+    font-size: 36px;
+  }
+
+  .programs__description {
+    width: 373px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
   }
 }

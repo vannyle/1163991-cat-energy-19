@@ -8,11 +8,15 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__container row">
+  <div class="page-header__container">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
+      </picture>
     </a>
-    <button class="nav__toggle" type="button">
+    <button class="page-header__toggle" type="button">
       <img src="img/icon-close.svg" width="25" height="19" alt="Меню">
     </button>
   </div>
@@ -22,7 +26,7 @@
         <a class="nav__link" href="index.html">Главная</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link" href="catalog.html">Каталог продукции</a>
+        <a class="nav__link nav__link--active" href="catalog.html">Каталог продукции</a>
       </li>
       <li class="nav__item">
         <a class="nav__link" href="form.html">Подбор программы</a>

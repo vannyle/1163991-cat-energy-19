@@ -11,6 +11,15 @@ $btn-color: #68b738;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
+@mixin active-line {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  margin: 10px auto 0;
+}
+
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
@@ -86,6 +95,10 @@ section {
 }
 
 @media (min-width: 768px) {
+  h2 {
+    font-size: 60px;
+  }
+
   .row {
     margin: 0 30px;
   }

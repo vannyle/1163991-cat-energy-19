@@ -33,3 +33,10 @@
   position: absolute;
   border: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .address__map {
+    height: 400px;
+    padding-bottom: 0;
+  }
+}
