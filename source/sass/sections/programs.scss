@@ -121,3 +121,12 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs__image {
+    width: 552px;
+    height: 499px;
+    top: 0;
+    left: 560px;
+  }
+}

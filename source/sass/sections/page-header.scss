@@ -78,7 +78,13 @@
     font-size: 18px;
 
     &--active::after {
-     @include active-line;
+      @include active-line;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin: 0 110px;
   }
 }

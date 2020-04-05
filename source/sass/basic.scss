@@ -7,6 +7,7 @@ $color-green: #68b738;
 $text-color: #444444;
 $bgc-grey: #f2f2f2;
 $border-line: 1px solid #ededed;
+$border-input: 1px solid #cdcdcd;
 $btn-color: #68b738;
 $tablet-width: 768px;
 $desktop-width: 1200px;
@@ -94,7 +95,7 @@ section {
   justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   html,
   body {
     font-size: 16px;
@@ -106,5 +107,11 @@ section {
 
   .row {
     margin: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .row {
+    margin: 0 110px;
   }
 }

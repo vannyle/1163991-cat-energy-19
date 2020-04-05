@@ -36,83 +36,86 @@
 </header>
 <main>
   <h1 class="visually-hidden">Подбор программы Cat Energy</h1>
-  <section class="selection row">
-    <h2 class="selection__title">Подбор программы</h2>
-    <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+  <section class="selection">
+    <div class="row">
+      <h2 class="selection__title">Подбор программы</h2>
+      <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </div>
     <form class="selection__form form__list" action="https://echo.htmlacademy.ru" method="get">
-      <div class="form__item pet-info">
-        <ul class="form__info">
-          <li class="pet-info__name">
+      <div class="form__item">
+        <ul class="form__info pet-info row">
+          <li class="form__field pet-info__name">
             <label for="pet-name">Имя:*</label>
             <input type="text" name="name" id="pet-name" placeholder="Барсик" required>
           </li>
-          <li class="pet-info__weight">
+          <li class="form__field pet-info__weight">
             <label for="pet-weight">Вес (кг):*</label>
             <input type="number" name="weight" id="pet-weight" placeholder="7" required>
           </li>
-          <li class="pet-info__age">
+          <li class="form__field pet-info__age">
             <label for="pet-age">Возраст (лет):</label>
             <input type="number" name="age" id="pet-age" placeholder="7">
           </li>
         </ul>
       </div>
-      <div class="form__item programs-items">
-        <ul class="form__info">
-          <li>
+      <div class="form__item">
+        <ul class="form__radio row">
+          <li class="form__tick">
             <input type="radio" name="program" value="slim" id="slim-program">
             <label for="slim-program">Похудение</label>
           </li>
-          <li>
+          <li class="form__tick">
             <input type="radio" name="program" value="pro" id="pro-program">
             <label for="pro-program">Набор массы</label>
           </li>
-          <li>
+          <li class="form__tick">
             <input type="radio" name="program" value="other" id="others">
             <label for="others">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
       </div>
-      <div class="form__item owner-info">
+      <div class="form__item owner row">
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
-        <ul class="form__info">
-          <li>
+        <ul class="form__info owner-info">
+          <li class="form__field">
             <label for="email">E-mail:*</label>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
           </li>
-          <li>
+          <li class="form__field">
             <label for="phone-number">Телефон:*</label>
             <input type="number" name="phone" id="phone-number" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </div>
-      <div class="form__item comment">
-        <h3 class="form__title">Комментарий</h3>
+      <div class="form__item comment row">
+        <h3 class="form__title comment__title">Комментарий</h3>
         <label class="visually-hidden" for="comment">Написать комментарий</label>
         <textarea name="comment" id="comment" cols="30" rows="10"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
-      <div class="form__item additional">
+      <div class="form__item additional row">
         <h3 class="form__title">Дополнительно</h3>
-        <ul class="form__info">
-          <li>
+        <ul class="form__checkbox additional__info">
+          <li class="form__box">
             <input type="checkbox" name="option" value="sweetener" id="sweetener">
             <label for="sweetener">Сахарозаменитель</label>
           </li>
-          <li>
+          <li class="form__box">
             <input type="checkbox" name="option" value="water" id="water">
             <label for="water">Питьевая вода</label>
           </li>
-          <li>
+          <li class="form__box">
             <input type="checkbox" name="option" value="milk" id="milk">
             <label for="milk">Молоко</label>
           </li>
-          <li>
+          <li class="form__box">
             <input type="checkbox" name="option" value="vitamin" id="vitamin">
             <label for="vitamin">Витамины</label>
           </li>
         </ul>
       </div>
-      <button class="selection-form__button button" type="submit">Отправить заявку</button>
+      <button class="selection-form__button button row" type="submit">Отправить заявку</button>
+      <p class="require row">* — Обязательные поля</p>
     </form>
   </section>
 </main>
