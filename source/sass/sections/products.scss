@@ -44,3 +44,9 @@
   font-size: 16px;
   margin-top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .products__description {
+    flex-direction: column-reverse;
+  }
+}

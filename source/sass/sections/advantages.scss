@@ -32,3 +32,22 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    border: none;
+  }
+
+  .advantages__list {
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    margin: 0;
+
+    &:nth-child(2n+1) {
+      margin: 0;
+    }
+  }
+}

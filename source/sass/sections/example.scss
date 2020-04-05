@@ -58,3 +58,31 @@
     background-color: $bgc-grey;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example__layout {
+    background-color: $bgc-grey;
+  }
+
+  .example__items {
+    max-width: 1200px;
+    min-height: 462px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .example__wrapper {
+    width: 430px;
+    margin: 0;
+  }
+
+  .example__info {
+    flex-wrap: wrap;
+  }
+
+  .example__price {
+    width: 100%;
+    text-align: left;
+  }
+}

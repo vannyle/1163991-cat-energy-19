@@ -84,7 +84,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    margin: 0 110px;
+  .page-header,
+  .programs {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

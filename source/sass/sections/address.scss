@@ -69,3 +69,25 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: relative;
+  }
+
+  .address__header {
+    margin: 0 auto;
+    padding: 0 76px;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 570px;
+    height: 200px;
+    top: 95px;
+    left: 115px;
+  }
+
+  .address__info {
+    text-align: left;
+  }
+}

@@ -123,10 +123,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs__header {
+    margin-bottom: 0;
+    margin-left: 80px;
+  }
+
   .programs__image {
     width: 552px;
     height: 499px;
     top: 0;
-    left: 560px;
+    left: 470px;
+  }
+
+  .programs__list {
+    margin: 210px 0 0;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    min-width: 570px;
   }
 }

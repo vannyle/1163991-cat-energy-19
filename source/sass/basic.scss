@@ -112,6 +112,7 @@ section {
 
 @media (min-width: $desktop-width) {
   .row {
-    margin: 0 110px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

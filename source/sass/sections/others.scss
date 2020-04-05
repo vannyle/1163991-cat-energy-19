@@ -1,5 +1,22 @@
+.others__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .others__item {
+  width: 100%;
+  min-height: 130px;
   padding-bottom: 20px;
+  border-bottom: $border-line;
+  border-top: $border-line;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.others__details {
+  display: flex;
+  justify-content: space-between;
 }
 
 .others__gift {
@@ -14,7 +31,66 @@
 .others__slogan {
   color: $color-white;
   font-size: 16px;
-  display: block;
   padding: 190px 60px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .others__item {
+    min-height: 140px;
+  }
+
+  .others__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .others__price {
+    margin-left: 50px;
+  }
+
+  .others__gift {
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    width: 100%;
+    height: 200px;
+  }
+
+  .others__slogan {
+    padding: 75px 125px 69px 424px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .others__layout {
+    display: flex;
+  }
+
+  .others__item {
+    min-height: 70px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .others__item-wrapper {
+    width: 610px;
+  }
+
+  .others__list {
+    width: 895px;
+  }
+
+  .others__btn {
+    min-width: 245px;
+  }
+
+  .others__gift {
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    width: 245px;
+    height: 289px;
+    margin-left: 80px;
+  }
 }
