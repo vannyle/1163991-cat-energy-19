@@ -60,6 +60,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    padding-bottom: 0;
+  }
+
   .example__layout {
     background-color: $bgc-grey;
   }

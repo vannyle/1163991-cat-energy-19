@@ -40,7 +40,7 @@
   padding: 0 20px;
   margin-bottom: 20px;
   min-height: 270px;
-  flex-basis: 280px;
+  flex-basis: 100%;
 }
 
 .programs__name {
@@ -142,5 +142,6 @@
 
   .programs__item {
     min-width: 570px;
+    flex-basis: unset;
   }
 }
