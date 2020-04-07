@@ -17,11 +17,12 @@
         <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
       </picture>
     </a>
-    <button class="page-header__toggle" type="button">
-      <img src="img/icon-close.svg" width="25" height="19" alt="Меню">
+    <button class="page-header__toggle toggle toggle--open toggle--nojs" type="button">
+      <img class="toggle--btn-close" src="img/icon-close.svg" width="25" height="19" alt="Закрыть меню">
+      <img class="toggle--btn-open" src="img/icon-mobile-menu.svg" width="25" height="19" alt="Открыть меню">
     </button>
   </div>
-  <nav class="nav">
+  <nav class="page-header__nav nav nav--open nav--nojs">
     <ul class="nav__list">
       <li class="nav__item">
         <a class="nav__link nav__link--active" href="#">Главная</a>
@@ -148,4 +149,5 @@
   </div>
 </footer>
 </body>
+<script src="js/app.js"></script>
 </html>

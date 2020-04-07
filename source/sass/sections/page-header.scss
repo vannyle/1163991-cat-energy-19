@@ -10,11 +10,48 @@
   align-self: center;
 }
 
+.nav--open {
+  display: block;
+}
+
+.nav--close {
+  display: none;
+}
+
+.nav--nojs {
+  display: block;
+}
+
 .page-header__toggle {
   background-color: $color-white;
   border: none;
   outline: none;
 }
+
+.toggle--open .toggle--btn-close {
+  display: block;
+}
+
+.toggle--open .toggle--btn-open {
+  display: none;
+}
+
+.toggle--close .toggle--btn-close {
+  display: none;
+}
+
+.toggle--close .toggle--btn-open {
+  display: block;
+}
+
+.toggle--nojs .toggle--btn-open {
+  display: none;
+}
+
+.toggle--nojs .toggle--btn-close {
+  display: none;
+}
+
 
 .nav__list {
   list-style: none;
