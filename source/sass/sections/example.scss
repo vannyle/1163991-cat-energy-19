@@ -14,11 +14,11 @@
 }
 
 .example__rate-number {
+  margin-bottom: 10px;
+  text-transform: uppercase;
   font-family: $font-family-title;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .example__cat {
@@ -26,9 +26,9 @@
 }
 
 .example__price {
+  text-align: center;
   font-family: $font-family-title;
   text-transform: uppercase;
-  text-align: center;
   color: $color-black;
 }
 

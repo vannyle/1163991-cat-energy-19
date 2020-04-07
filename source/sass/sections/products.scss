@@ -13,9 +13,8 @@
 
 .products__container {
   padding: 0 0 25px;
-  border-bottom: $border-line;
-
   flex-basis: 320px;
+  border-bottom: $border-line;
 }
 
 .products__description {
@@ -33,16 +32,16 @@
 }
 
 .products__more-items {
+  margin: 80px 0 10px;
   text-transform: uppercase;
   font-size: 16px;
-  margin: 80px 0 10px;
 }
 
 .products__all-button {
+  margin-top: 20px;
   color: $text-color;
   background-color: #f2f2f2;
   font-size: 16px;
-  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {

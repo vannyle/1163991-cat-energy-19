@@ -10,10 +10,10 @@
 }
 
 .address__title {
+  padding: 0;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 1.25;
-  padding: 0;
 }
 
 .address__item {
@@ -56,12 +56,13 @@
   }
 
   .address__info {
-    font-size: 16px;
-    text-align: right;
     height: 77px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    font-size: 16px;
+    text-align: right;
   }
 
   .address__map {
@@ -76,15 +77,15 @@
   }
 
   .address__header {
-    margin: 0 auto;
-    padding: 0 76px;
     position: absolute;
     z-index: 1;
-    background-color: #ffffff;
     width: 570px;
     height: 200px;
     top: 95px;
     left: 115px;
+    margin: 0 auto;
+    padding: 0 76px;
+    background-color: #ffffff;
   }
 
   .address__info {
