@@ -29,7 +29,7 @@
         <a class="nav__link" href="catalog.html">Каталог продукции</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link nav__link--active" href="form.html">Подбор программы</a>
+        <a class="nav__link nav__link--active" href="#">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -42,37 +42,39 @@
       <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="selection__form form__list" action="https://echo.htmlacademy.ru" method="get">
-      <div class="form__item">
-        <ul class="form__info pet-info row">
-          <li class="form__field pet-info__name">
-            <label for="pet-name">Имя:*</label>
-            <input type="text" name="name" id="pet-name" placeholder="Барсик" required>
-          </li>
-          <li class="form__field pet-info__weight">
-            <label for="pet-weight">Вес (кг):*</label>
-            <input type="number" name="weight" id="pet-weight" placeholder="7" required>
-          </li>
-          <li class="form__field pet-info__age">
-            <label for="pet-age">Возраст (лет):</label>
-            <input type="number" name="age" id="pet-age" placeholder="7">
-          </li>
-        </ul>
-      </div>
-      <div class="form__item">
-        <ul class="form__radio row">
-          <li class="form__tick">
-            <input type="radio" name="program" value="slim" id="slim-program">
-            <label for="slim-program">Похудение</label>
-          </li>
-          <li class="form__tick">
-            <input type="radio" name="program" value="pro" id="pro-program">
-            <label for="pro-program">Набор массы</label>
-          </li>
-          <li class="form__tick">
-            <input type="radio" name="program" value="other" id="others">
-            <label for="others">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
+      <div class="form__pet-info row">
+        <div class="form__item">
+          <ul class="form__info pet-info row">
+            <li class="form__field pet-info__name">
+              <label for="pet-name">Имя:*</label>
+              <input type="text" name="name" id="pet-name" placeholder="Барсик" required>
+            </li>
+            <li class="form__field pet-info__weight">
+              <label for="pet-weight">Вес (кг):*</label>
+              <input type="number" name="weight" id="pet-weight" placeholder="7" required>
+            </li>
+            <li class="form__field pet-info__age">
+              <label for="pet-age">Возраст (лет):</label>
+              <input type="number" name="age" id="pet-age" placeholder="7">
+            </li>
+          </ul>
+        </div>
+        <div class="form__item">
+          <ul class="form__radio row">
+            <li class="form__tick">
+              <input type="radio" name="program" value="slim" id="slim-program">
+              <label for="slim-program">Похудение</label>
+            </li>
+            <li class="form__tick">
+              <input type="radio" name="program" value="pro" id="pro-program">
+              <label for="pro-program">Набор массы</label>
+            </li>
+            <li class="form__tick">
+              <input type="radio" name="program" value="other" id="others">
+              <label for="others">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="form__item owner row">
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
@@ -114,8 +116,10 @@
           </li>
         </ul>
       </div>
-      <button class="selection-form__button button row" type="submit">Отправить заявку</button>
-      <p class="require row">* — Обязательные поля</p>
+      <div class="selection__submit submit row">
+        <button class="submit__item button" type="submit">Отправить заявку</button>
+        <p class="submit__item">* — Обязательные поля</p>
+      </div>
     </form>
   </section>
 </main>

@@ -8,7 +8,6 @@ $text-color: #444444;
 $bgc-grey: #f2f2f2;
 $border-line: 1px solid #ededed;
 $border-input: 1px solid #cdcdcd;
-$btn-color: #68b738;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
@@ -85,7 +84,7 @@ section {
   font-family: $font-family-title;
   min-width: 280px;
   border: none;
-  background-color: $btn-color;
+  background-color: $color-green;
   color: $color-white;
   padding: 15px 50px;
   text-transform: uppercase;
