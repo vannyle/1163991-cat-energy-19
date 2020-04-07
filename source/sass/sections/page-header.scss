@@ -8,7 +8,6 @@
 
 .nav {
   align-self: center;
-  width: 100%;
 }
 
 .page-header__toggle {
@@ -61,16 +60,19 @@
   }
 
   .nav {
+    flex-grow: 1;
     width: 440px;
   }
 
   .nav__list {
     margin-top: 11px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   .nav__item {
+    margin-left: 36px;
     border: none;
   }
 

@@ -1,5 +1,7 @@
-@import "basic";
-@import "visually-hidden";
+@import "sections/variables";
+@import "sections/mixins";
+@import "sections/basic";
+@import "sections/visually-hidden";
 @import "sections/page-header";
 @import "sections/programs";
 @import "sections/advantages";
@@ -9,3 +11,5 @@
 @import "sections/others";
 @import "sections/selection";
 @import "sections/page-footer";
+@import "../../node_modules/node.normalize.scss/normalize";
+
