@@ -2,6 +2,7 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $color-green;
   background-size: cover;
   height: 305px;
   text-align: center;
@@ -61,7 +62,7 @@
   font-family: $font-family-title;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: $color-black;
   font-size: 16px;
 }
 
@@ -72,6 +73,7 @@
 
   .programs__header {
     background-image: none;
+    background-color: unset;
     margin-left: 120px;
     text-align: left;
     margin-bottom: 500px;
