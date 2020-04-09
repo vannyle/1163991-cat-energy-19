@@ -1,5 +1,12 @@
 .example {
+  padding-bottom: 35px;
   background-color: $bgc-grey;
+}
+
+.example__description {
+  width: 95%;
+  margin-top: 8px;
+  line-height: 1.3;
 }
 
 .example__rate {
@@ -9,16 +16,26 @@
 
 .example__rate-cat {
   flex-basis: 124px;
-  padding: 20px;
   text-align: center;
+  border-radius: 3px;
 }
 
 .example__rate-number {
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin: 26px 0;
+  padding: 9px 0;
   font-family: $font-family-title;
   font-size: 24px;
   font-weight: 400;
+  text-transform: uppercase;
+  border: $border-input;
+}
+
+.example__rate-value {
+  width: 87px;
+  margin: -37px auto 0;
+  padding: 0 10px;
+  background-color: $bgc-grey;
+  font-size: 12px;
 }
 
 .example__cat {
@@ -26,15 +43,23 @@
 }
 
 .example__price {
+  margin-top: 17px;
+  margin-bottom: 35px;
   text-align: center;
   font-family: $font-family-title;
+  font-weight: 600;
   text-transform: uppercase;
   color: $color-black;
 }
 
 .example__before-after {
+  margin-top: 26px;
   display: flex;
   justify-content: space-around;
+  text-transform: uppercase;
+  font-family: $font-family-title;
+  font-size: 16px;
+  color: $color-black;
 }
 
 @media (min-width: $tablet-width) {

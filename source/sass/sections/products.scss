@@ -40,8 +40,17 @@
 .products__all-button {
   margin-top: 20px;
   color: $text-color;
-  background-color: #f2f2f2;
+  background-color: $bgc-grey;
   font-size: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-darken-grey;
+  }
+
+  &:active {
+    color: $color-light-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {

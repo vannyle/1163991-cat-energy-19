@@ -6,6 +6,17 @@
   margin: 0 20px;
 }
 
+.page-header__logo-img {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .nav {
   align-self: center;
 }
@@ -52,7 +63,6 @@
   display: none;
 }
 
-
 .nav__list {
   list-style: none;
   text-align: center;
@@ -70,7 +80,17 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
+
+  &:hover,
+  &:focus {
+    color: $color-grey;
+  }
+
+  &:active {
+    color: $color-light-grey;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .page-header {

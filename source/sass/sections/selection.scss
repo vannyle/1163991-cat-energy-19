@@ -12,7 +12,8 @@
 
 .form__item {
   border-bottom: $border-line;
-
+  & input,
+  & textarea,
   & input::placeholder,
   & textarea::placeholder {
     font-family: $font-family-title;
@@ -111,6 +112,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form__pet-info {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .form__checkbox {
     flex-direction: row;
     flex-wrap: wrap;
