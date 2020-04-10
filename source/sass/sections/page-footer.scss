@@ -70,6 +70,7 @@
 .social__item svg,
 .copyright__logo svg {
   fill: $color-icons;
+
   &:hover,
   &:focus {
     fill: $color-green;
@@ -90,6 +91,7 @@
 .copyright__logo svg {
   width: 27px;
   height: 34px;
+  margin-top: 3px;
   fill: $color-icons;
 }
 
