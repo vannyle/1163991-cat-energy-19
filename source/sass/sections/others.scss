@@ -1,3 +1,8 @@
+.others__title {
+  padding: 19px 0 27px;
+  font-size: 24px;
+}
+
 .others__list {
   display: flex;
   flex-wrap: wrap;
@@ -5,18 +10,28 @@
 
 .others__item {
   width: 100%;
-  min-height: 130px;
-  padding-bottom: 20px;
+  min-height: 129px;
   border-bottom: $border-line;
   border-top: $border-line;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.others__name {
+  margin-top: 8px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
 }
 
 .others__details {
+  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
+}
+
+.others__btn {
+  padding: 10px 50px;
+  font-size: 16px;
 }
 
 .others__gift {
@@ -26,7 +41,7 @@
   background-color: $color-green;
   width: 280px;
   height: 289px;
-  margin: 30px auto;
+  margin-top: 39px;
 }
 
 .others__slogan {

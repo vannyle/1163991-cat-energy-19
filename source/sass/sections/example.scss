@@ -64,23 +64,70 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    padding-bottom: 0;
     background-color: $color-white;
   }
 
+  .example__description {
+    width: 96%;
+    margin-top: 16px;
+    line-height: 1.5;
+  }
+
   .example__info {
+    margin-top: 20px;
+    margin-bottom: 247px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  .example__rate-cat {
+    width: 162px;
+    margin-right: 42px;
+    flex-basis: unset;
+  }
+
+  .example__rate-number {
+    margin: 35px 0 36px;
+    padding: 12px 0;
+    font-size: 30px;
+  }
+
+  .example__rate-value {
+    width: unset;
+    margin: -45px auto 0;
+    background-color: $color-white;
+    font-size: 14px;
+  }
+
   .example__price {
     width: 174px;
+    margin-bottom: -10px;
     font-size: 20px;
     text-align: right;
   }
 
   .example__cat {
+    position: relative;
     background-color: $bgc-grey;
+    min-height: 462px;
+  }
+
+  .example__cat-image {
+    position: absolute;
+    top: -169px;
+    left: 45px;
+    width: 690px;
+    height: 517px;
+  }
+
+  .example__before-after {
+    padding-top: 361px;
+    width: 571px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 20px;
   }
 }
 
@@ -89,12 +136,16 @@
     padding-bottom: 0;
   }
 
+  .example__title {
+    padding-bottom: 60px;
+  }
+
   .example__layout {
     background-color: $bgc-grey;
   }
 
   .example__items {
-    max-width: 1200px;
+    max-width: $desktop-width;
     min-height: 462px;
     margin: 0 auto;
     display: flex;
@@ -106,12 +157,45 @@
     margin: 0;
   }
 
+  .example__description {
+    width: 438px;
+    margin-top: -11px;
+  }
+
   .example__info {
     flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .example__rate-number {
+    padding: 13px 0;
+  }
+
+  .example__rate-value {
+    background-color: $bgc-grey;
+    width: 147px;
   }
 
   .example__price {
     width: 100%;
+    margin-top: 47px;
     text-align: left;
+
+    & span {
+      margin-left: 60px;
+    }
+  }
+
+  .example__cat-image {
+    max-width: 690px;
+    height: 517px;
+    top: -190px;
+    left: 140px;
+  }
+
+  .example__before-after {
+    padding-top: 363px;
+    margin-left: 219px;
   }
 }

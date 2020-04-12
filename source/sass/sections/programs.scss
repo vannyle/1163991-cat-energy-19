@@ -15,7 +15,7 @@
 
 .programs__title {
   line-height: 1;
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .programs__slogan {
@@ -30,6 +30,7 @@
 }
 
 .programs__select {
+  margin-top: 3px;
   text-decoration: none;
 }
 
@@ -37,7 +38,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 200px 20px 0;
+  margin: 196px 20px 0;
   list-style: none;
 }
 
@@ -53,9 +54,9 @@
 }
 
 .programs__name {
-  padding: 30px 0;
+  padding: 31px 0;
   font-size: 24px;
-  text-align: center;
+  margin-left: 71px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -88,7 +89,7 @@
   .programs__header {
     background-image: none;
     background-color: unset;
-    margin-left: 120px;
+    margin-left: 118px;
     text-align: left;
     margin-bottom: 500px;
     color: $color-black;
@@ -96,10 +97,18 @@
 
   .programs__title {
     width: 415px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 16px;
   }
 
   .programs__slogan {
+    font-size: 20px;
+  }
+
+  .programs__select {
+    min-width: unset;
+    margin-top: 17px;
+    padding: 14px 27px;
     font-size: 20px;
   }
 
@@ -108,27 +117,41 @@
     z-index: -1;
     width: 709px;
     height: 609px;
-    top: 220px;
-    left: 0;
+    top: 228px;
+    left: 29px;
+  }
+
+  .programs__list {
+    margin: 196px 30px 0;
   }
 
   .programs__item {
     min-width: 708px;
     min-height: 372px;
-    padding: 50px 50px 60px;
+    margin-top: 31px;
+    margin-bottom: 0;
+    padding: 50px 52px 56px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
+
+    &--pro .programs__description {
+      width: 344px;
+    }
   }
 
   .programs__name {
+    margin-left: 0;
+    padding: 18px 0 0;
     font-size: 36px;
   }
 
   .programs__description {
     width: 373px;
+    margin-top: 2px;
     font-size: 16px;
+    line-height: 1.5;
     border: none;
   }
 
@@ -138,16 +161,41 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-size: cover;
+      width: 720px;
+      height: 696px;
+      top: -190px;
+      left: 609px;
+      z-index: -1;
+    }
+  }
+
   .programs__header {
     margin-bottom: 0;
     margin-left: 80px;
   }
 
+  .programs__title {
+    margin-top: 29px;
+    margin-bottom: 5px;
+  }
+
+  .programs__select {
+    margin-top: 23px;
+  }
+
   .programs__image {
     width: 552px;
     height: 499px;
-    top: 0;
-    left: 470px;
+    top: -54px;
+    left: 450px;
   }
 
   .programs__list {
@@ -157,6 +205,21 @@
 
   .programs__item {
     min-width: 570px;
+    margin-top: 66px;
     flex-basis: unset;
+
+    &--pro .programs__description {
+      width: 446px;
+    }
+  }
+
+  .programs__name {
+    margin-left: 163px;
+  }
+
+  .programs__description {
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 469px;
   }
 }

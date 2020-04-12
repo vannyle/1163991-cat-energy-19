@@ -106,6 +106,7 @@
   .page-footer__item {
     border-bottom: none;
     width: 162px;
+    padding: 15px 0;
   }
 
   .page-footer__logo {
@@ -129,5 +130,10 @@
       width: 14px;
       height: 28px;
     }
+  }
+
+  .page-footer__copyright {
+    margin-left: -11px;
+    padding-top: 14px;
   }
 }

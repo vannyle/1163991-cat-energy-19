@@ -62,7 +62,7 @@ section {
   display: inline-flex;
   justify-content: center;
   min-width: 280px;
-  padding: 12px 50px;
+  padding: 9px 50px;
   background-color: $color-green;
   font-family: $font-family-title;
   color: $color-white;
@@ -88,6 +88,7 @@ section {
   }
 
   h2 {
+    padding: 30px 0;
     font-size: 60px;
   }
 
@@ -98,7 +99,7 @@ section {
 
 @media (min-width: $desktop-width) {
   .row {
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
   }
 }
