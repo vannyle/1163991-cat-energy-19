@@ -1,9 +1,11 @@
 .products {
+  padding-bottom: 0;
   font-size: 12px;
 }
 
 .products__title {
   margin-left: -22px;
+  padding-top: 17px;
   padding-bottom: 30px;
   color: #111111;
   border-top: $border-line;
@@ -59,17 +61,19 @@
   font-size: 16px;
 }
 
-.products__to-all {
+.more-items__to-all {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.products__more-items {
+.more-items__title {
   margin: 78px 0 5px;
   text-transform: uppercase;
   font-size: 16px;
 }
 
-.products__all-button {
+.more-items__button {
   margin-top: 23px;
   color: $text-color;
   background-color: $bgc-grey;
@@ -86,17 +90,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .products__list {
+  .products {
     margin: 0 30px;
+    font-size: 16px;
+  }
+
+  .products__list {
     justify-content: space-between;
   }
 
   .products__title {
-    margin: auto 30px;
+    margin: 0;
+    padding-top: 31px;
     text-align: left;
   }
 
   .products__container {
+    position: relative;
     width: 45.77%;
     min-height: 430px;
     margin-top: 121px;
@@ -108,11 +118,11 @@
 
   .products__item {
     margin: 0 37px;
-    padding-bottom: 42px;
+    padding-bottom: 41px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 432px;
+    min-height: 431px;
   }
 
   .products__description {
@@ -121,7 +131,6 @@
 
   .products__info {
     width: 100%;
-    font-size: 16px;
   }
 
   .products__name {
@@ -145,14 +154,62 @@
     }
   }
 
+  .products__image {
+    position: absolute;
+    width: 100%;
+
+    &--small {
+      top: -46px;
+      left: 0;
+    }
+
+    &--big {
+      top: -82px;
+      left: 0;
+    }
+  }
+
   .products__order {
     min-width: 100%;
+  }
+
+  .more-items {
+    background-color: $color-white;
+  }
+
+  .more-items__slogan {
+    margin: 24px 40px 0;
+  }
+
+  .more-items__button {
+    min-width: 100%;
+    margin-top: 86px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .products {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .products__title {
+    padding-top: 6px;
+    padding-bottom: 28px;
+  }
+
   .products__container {
     flex-basis: 245px;
+    margin-bottom: 20px;
+  }
+
+  .more-items__slogan {
+    margin: 24px 0 0;
+  }
+
+  .more-items__button {
+    margin-top: 86px;
+    padding: 9px 0;
   }
 }
 

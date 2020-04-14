@@ -17,7 +17,7 @@
 }
 
 .address__item {
-  width: 135px;
+  width: 139px;
 }
 
 .address__info {
@@ -87,13 +87,14 @@
     width: 570px;
     height: 200px;
     top: 97px;
-    left: 150px;
+    left: 110px;
     margin: 0 auto;
     padding: 0 76px;
     background-color: $color-white;
   }
 
   .address__info {
+    min-height: 82px;
     text-align: left;
   }
 

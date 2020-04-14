@@ -3,7 +3,7 @@
 }
 
 .others__title {
-  padding: 19px 0 27px;
+  padding: 25px 0 27px;
   font-size: 24px;
 }
 
@@ -57,18 +57,36 @@
 }
 
 @media (min-width: $tablet-width) {
+  .others {
+    padding-bottom: 78px;
+  }
+
   .others__title {
+    padding: 37px 39px 72px;
     font-size: 36px;
   }
 
   .others__item {
+    padding: 0 37px;
     min-height: 140px;
+    justify-content: flex-start;
   }
 
   .others__item-wrapper {
+    margin-top: 13px;
+    margin-bottom: 9px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+  }
+
+  .others__name {
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  .others__details {
+    min-width: 285px;
   }
 
   .others__price {
@@ -79,6 +97,7 @@
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     width: 100%;
     height: 200px;
+    margin-top: 64px;
   }
 
   .others__slogan {
@@ -88,20 +107,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .others {
+    padding-bottom: 82px;
+  }
+
+  .others__title {
+    padding: 46px 0 77px;
+  }
+
   .others__layout {
     display: flex;
   }
 
   .others__item {
-    min-height: 70px;
     padding: 0;
+    min-height: 72px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   .others__item-wrapper {
-    width: 610px;
+    min-width: 613px;
+    margin: 0;
+  }
+
+  .others__name {
+    letter-spacing: 0.7px;
+  }
+
+  .others__details {
+    min-width: 288px;
   }
 
   .others__list {
@@ -110,6 +146,7 @@
 
   .others__btn {
     min-width: 245px;
+    margin-bottom: 11px;
   }
 
   .others__gift {
@@ -117,9 +154,11 @@
     width: 245px;
     height: 289px;
     margin-left: 80px;
+    margin-top: -4px;
   }
 
   .others__slogan {
-    padding: 190px 60px;
+    padding: 183px 43px 0;
+    text-align: center;
   }
 }

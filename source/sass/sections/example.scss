@@ -53,7 +53,8 @@
 }
 
 .example__before-after {
-  margin-top: 26px;
+  margin-top: 25px;
+  padding-left: 4px;
   display: flex;
   justify-content: space-around;
   text-transform: uppercase;
@@ -95,8 +96,9 @@
   }
 
   .example__rate-value {
-    width: unset;
+    width: 137px;
     margin: -45px auto 0;
+    padding: 0 5px;
     background-color: $color-white;
     font-size: 14px;
   }
