@@ -1,3 +1,7 @@
+.others {
+  padding-bottom: 37px;
+}
+
 .others__title {
   padding: 19px 0 27px;
   font-size: 24px;
@@ -47,11 +51,16 @@
 .others__slogan {
   color: $color-white;
   font-size: 16px;
-  padding: 190px 60px;
+  padding: 187px 50px 0;
   text-align: center;
+  line-height: 1.25;
 }
 
 @media (min-width: $tablet-width) {
+  .others__title {
+    font-size: 36px;
+  }
+
   .others__item {
     min-height: 140px;
   }

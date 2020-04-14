@@ -168,10 +168,11 @@
       position: absolute;
       content: "";
       background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-color: $color-green;
       background-size: cover;
       width: 720px;
       height: 696px;
-      top: -190px;
+      top: -197px;
       left: 609px;
       z-index: -1;
     }
