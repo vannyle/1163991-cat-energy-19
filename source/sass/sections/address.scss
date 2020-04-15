@@ -57,7 +57,7 @@
 
   .address__info {
     width: 170px;
-    height: 78px;
+    min-height: 78px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,7 +87,7 @@
     width: 570px;
     height: 200px;
     top: 97px;
-    left: 110px;
+    left: 230px;
     margin: 0 auto;
     padding: 0 76px;
     background-color: $color-white;

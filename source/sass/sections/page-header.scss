@@ -174,5 +174,14 @@
     &--index-active::after {
       background-color: $color-white;
     }
+
+    &--index:hover,
+    &--index:focus {
+      color: $color-whiten;
+    }
+
+    &--index:active {
+      color: $color-light;
+    }
   }
 }
