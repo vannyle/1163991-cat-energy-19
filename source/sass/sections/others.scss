@@ -44,8 +44,8 @@
   background-size: cover;
   background-color: $color-green;
   width: 280px;
-  height: 289px;
-  margin-top: 39px;
+  min-height: 289px;
+  margin: 39px auto 0;
 }
 
 .others__slogan {

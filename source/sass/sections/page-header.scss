@@ -21,7 +21,7 @@
   align-self: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width-only) {
   .nav--open {
     display: block;
   }
