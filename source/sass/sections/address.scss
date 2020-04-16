@@ -71,8 +71,12 @@
   }
 
   .address__map {
-    height: 400px;
+    height: 393px;
     padding-bottom: 0;
+
+    &--form {
+      height: 396px;
+    }
   }
 }
 
@@ -87,7 +91,7 @@
     width: 570px;
     height: 200px;
     top: 97px;
-    left: 230px;
+    left: 150px;
     margin: 0 auto;
     padding: 0 76px;
     background-color: $color-white;

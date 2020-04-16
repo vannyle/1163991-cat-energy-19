@@ -68,6 +68,7 @@
 }
 
 .form__field {
+  position: relative;
   justify-content: space-between;
   margin-top: 10px;
 }
@@ -111,13 +112,34 @@
   padding: 28px 0 24px;
 }
 
-.owner-info {
+.owner__info {
   min-height: 168px;
   padding: 25px 0 30px;
 }
 
-.owner-info label {
+.owner__info label {
   margin-right: 11px;
+}
+
+.owner__items {
+  position: relative;
+}
+
+.owner__item {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  fill: $color-dark;
+
+  &--email {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--phone {
+    width: 21px;
+    height: 21px;
+  }
 }
 
 .comment__title {
@@ -210,7 +232,7 @@
     padding: 45px 0 72px;
   }
 
-  .owner-info {
+  .owner__info {
     padding: 55px 0 30px;
   }
 
@@ -264,6 +286,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .selection__title {
+    padding: 6px 0 42px;
+  }
+
+  .selection__description {
+    max-width: 30%;
+    margin: 0;
+  }
+
   .form__pet-info {
     max-width: $desktop-width;
     margin: 0 auto;
@@ -276,15 +307,45 @@
     flex-basis: 46.7%;
   }
 
-  .owner-info {
-    flex-direction: row;
+  .form__radio {
+    margin: 0;
+    padding: 25px 28px 15px;
   }
 
-  .owner-info .form__field {
+  .form__title {
+    padding: 0;
+  }
+
+  .owner__info {
+    flex-direction: row;
+    padding: 40px 0 30px;
+  }
+
+  .owner__info .form__field {
     flex-basis: 46.7%;
   }
 
+  .comment {
+    margin-bottom: 60px;
+  }
+
+  .comment__title {
+    padding: 25px 0 76px;
+  }
+
+  .additional__info {
+    min-height: 160px;
+  }
+
   .form__box {
-    min-width: 25%;
+    min-width: 20%;
+  }
+
+  .selection__submit {
+    padding-bottom: 10px;
+  }
+
+  .submit__item {
+    min-width: 46.6%;
   }
 }

@@ -7,8 +7,37 @@
 }
 
 .advantages__item {
+  position: relative;
   margin: 14px 0;
   line-height: 1.3;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color-green;
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    width: 60px;
+    height: 60px;
+    top: -4px;
+    left: -80px;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--dining::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--clock::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,16 +50,25 @@
     margin-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .advantages__item {
-    margin-top: 141px;
+    margin-top: 139px;
     margin-bottom: 103px;
     flex-basis: 245px;
     line-height: 1.5;
 
-    &:nth-child(2n+1) {
-      margin-right: 138px;
+    &:nth-child(2n) {
+      margin-right: 78px;
+    }
+
+    &::before {
+      background-position: 14px 14px;
+      width: 80px;
+      height: 80px;
+      top: -112px;
+      left: 0;
     }
   }
 }
@@ -45,17 +83,45 @@
     padding: 58px 0;
   }
 
-  .advantages__list {
-    justify-content: space-between;
-  }
-
   .advantages__item {
     margin: 0;
     padding-top: 110px;
     min-height: 265px;
 
-    &:nth-child(2n+1) {
+    &:nth-child(2n) {
       margin: 0;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      position: absolute;
+      height: 233px;
+      top: -110px;
+      left: 112px;
+      z-index: -1;
+      font-family: $font-family-title;
+      font-size: 281px;
+      color: $bgc-grey;
+    }
+
+    &--leaf::after {
+      content: "1";
+      left: 118px;
+    }
+
+    &--powder::after {
+      content: "2";
+    }
+
+    &--dining::after {
+      content: "3";
+    }
+
+    &--clock::after {
+      content: "4";
     }
   }
 }
