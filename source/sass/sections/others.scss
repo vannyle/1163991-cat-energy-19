@@ -39,7 +39,7 @@
 }
 
 .others__gift {
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-color: $color-green;
@@ -60,7 +60,7 @@
     position: absolute;
     content: "";
     background-color: $color-white;
-    mask-image: url("../../img/icon-gift.svg");
+    mask-image: url("../img/icon-gift.svg");
     width: 56px;
     height: 61px;
     top: 65px;
@@ -102,7 +102,7 @@
   }
 
   .others__gift {
-    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 100%;
     min-height: 200px;
     margin-top: 66px;
@@ -162,7 +162,7 @@
   }
 
   .others__gift {
-    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     width: 245px;
     height: 289px;
     margin-left: 80px;

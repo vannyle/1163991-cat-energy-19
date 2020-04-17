@@ -103,8 +103,9 @@
             <img class="example__cat-image" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот">
           </picture>
           <div class="example__before-after comparison">
-            <p class="comparison__item">Было</p>
-            <p class="comparison__item">Стало</p>
+            <label class="comparison__item" for="slider">Было</label>
+            <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+            <label class="comparison__item" for="slider">Стало</label>
           </div>
         </div>
       </div>

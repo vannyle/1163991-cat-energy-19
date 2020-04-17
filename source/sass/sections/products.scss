@@ -78,7 +78,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../../img/icon-plus-mobile.svg");
+    background-image: url("../img/icon-plus-mobile.svg");
     width: 31px;
     height: 31px;
     opacity: 0.2;
@@ -186,7 +186,7 @@
 
   .more-items__title {
     &::before {
-      background-image: url("../../img/icon-plus.svg");
+      background-image: url("../img/icon-plus.svg");
       width: 61px;
       height: 61px;
       top: -110px;

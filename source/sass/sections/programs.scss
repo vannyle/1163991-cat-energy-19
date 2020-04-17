@@ -3,7 +3,7 @@
 }
 
 .programs__header {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $color-green;
@@ -82,7 +82,7 @@
   }
 
   &--slim::before {
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     width: 35px;
     height: 49px;
     top: 24px;
@@ -90,7 +90,7 @@
   }
 
   &--pro::before {
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     width: 67px;
     height: 28px;
     top: 35px;
@@ -117,7 +117,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 25px;
@@ -183,7 +183,6 @@
     padding: 50px 52px 56px;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
     justify-content: space-between;
 
     &--pro .programs__description {
@@ -243,7 +242,7 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-color: $color-green;
       background-size: cover;
       width: 720px;
@@ -282,7 +281,7 @@
 
   .programs__item {
     min-width: 570px;
-    flex-basis: 500px;
+    flex-basis: 462px;
     margin-top: 66px;
 
     &--pro .programs__description {
