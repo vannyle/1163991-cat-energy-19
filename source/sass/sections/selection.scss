@@ -86,27 +86,82 @@
 }
 
 //Customize the radio form
-.tick__item {
+.tick__item,
+.checkbox__item {
   position: relative;
   padding-left: 40px;
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  min-height: 30px;
 }
 
-.tick__item input {
+.tick__item input,
+.checkbox__item input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.check-mark {
+.tick__mark,
+.checkbox__mark {
   position: absolute;
   top: 0;
   left: 0;
+  height: 30px;
+  width: 30px;
   border: $border-input;
+}
+
+.tick__mark {
   border-radius: 50%;
 }
+
+.tick__item:hover input ~ .tick__mark,
+.tick__item:focus input ~ .tick__mark,
+.checkbox__item:hover input ~ .checkbox__mark,
+.checkbox__item:focus input ~ .checkbox__mark {
+  border: $border-input-hvr;
+}
+
+.tick__item:active input ~ .tick__mark,
+.checkbox__item:focus input ~ .checkbox__mark {
+  border: $border-input-hvr;
+  opacity: 0.3;
+}
+
+.tick__mark::after,
+.checkbox__mark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.tick__item input:checked ~ .tick__mark::after,
+.checkbox__item input:checked ~ .checkbox__mark::after {
+  display: block;
+}
+
+.tick__item .tick__mark::after {
+  top: 8px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $color-green;
+}
+
+.checkbox__item .checkbox__mark::after {
+  content: "";
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 17px;
+  top: 5px;
+  left: 4px;
+}
+
 
 .form__item label {
   margin-right: 15px;

@@ -65,7 +65,7 @@
             <li class="form__tick tick">
               <label class="tick__item" for="slim-program">
                 <input type="radio" name="program" value="slim" id="slim-program" checked="checked">
-                <span class="check-mark"></span>
+                <span class="tick__mark"></span>
                 Похудение
               </label>
             </li>
@@ -73,14 +73,14 @@
               <label class="tick__item" for="pro-program">
                 <input type="radio" name="program" value="pro" id="pro-program">
                 Набор массы
-                <span class="check-mark"></span>
+                <span class="tick__mark"></span>
               </label>
             </li>
             <li class="form__tick tick">
               <label class="tick__item" for="others">
                 <input type="radio" name="program" value="other" id="others">
                 Не знаю (Нужен ваш совет)
-                <span class="check-mark"></span>
+                <span class="tick__mark"></span>
               </label>
             </li>
           </ul>
@@ -122,21 +122,33 @@
       <div class="form__item additional row">
         <h3 class="form__title">Дополнительно</h3>
         <ul class="form__checkbox additional__info">
-          <li class="form__box">
-            <input type="checkbox" name="option" value="sweetener" id="sweetener">
-            <label for="sweetener">Сахарозаменитель</label>
+          <li class="form__box checkbox">
+            <label class="checkbox__item" for="sweetener">
+              <input type="checkbox" name="option" value="sweetener" id="sweetener" checked="checked">
+              Сахарозаменитель
+              <span class="checkbox__mark"></span>
+              </label>
           </li>
-          <li class="form__box">
-            <input type="checkbox" name="option" value="water" id="water">
-            <label for="water">Питьевая вода</label>
+          <li class="form__box checkbox">
+            <label class="checkbox__item" for="water">
+              <input type="checkbox" name="option" value="water" id="water">
+              Питьевая вода
+              <span class="checkbox__mark"></span>
+            </label>
           </li>
-          <li class="form__box">
-            <input type="checkbox" name="option" value="milk" id="milk">
-            <label for="milk">Молоко</label>
+          <li class="form__box checkbox">
+            <label class="checkbox__item" for="milk">
+              <input type="checkbox" name="option" value="milk" id="milk">
+              Молоко
+              <span class="checkbox__mark"></span>
+            </label>
           </li>
-          <li class="form__box">
-            <input type="checkbox" name="option" value="vitamin" id="vitamin">
-            <label for="vitamin">Витамины</label>
+          <li class="form__box checkbox">
+            <label class="checkbox__item" for="vitamin">
+              <input type="checkbox" name="option" value="vitamin" id="vitamin">
+              Витамины
+              <span class="checkbox__mark"></span>
+            </label>
           </li>
         </ul>
       </div>
