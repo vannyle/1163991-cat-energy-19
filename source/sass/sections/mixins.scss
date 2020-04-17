@@ -1,0 +1,8 @@
+@mixin active-line {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  margin: 7px auto 0;
+}

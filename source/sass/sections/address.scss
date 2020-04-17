@@ -17,7 +17,7 @@
 }
 
 .address__item {
-  width: 135px;
+  width: 139px;
 }
 
 .address__info {
@@ -48,7 +48,7 @@
   }
 
   .address__item {
-    width: 155px;
+    width: 139px;
   }
 
   .address__title {
@@ -56,7 +56,8 @@
   }
 
   .address__info {
-    height: 77px;
+    width: 170px;
+    min-height: 78px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,9 +66,17 @@
     text-align: right;
   }
 
+  .address__street {
+    margin-bottom: 16px;
+  }
+
   .address__map {
-    height: 400px;
+    height: 393px;
     padding-bottom: 0;
+
+    &--form {
+      height: 396px;
+    }
   }
 }
 
@@ -81,14 +90,20 @@
     z-index: 1;
     width: 570px;
     height: 200px;
-    top: 95px;
-    left: 115px;
+    top: 97px;
+    left: 150px;
     margin: 0 auto;
     padding: 0 76px;
     background-color: $color-white;
   }
 
   .address__info {
+    min-height: 82px;
     text-align: left;
+  }
+
+  .address__street {
+    margin-bottom: 18px;
+    line-height: 1.25;
   }
 }
