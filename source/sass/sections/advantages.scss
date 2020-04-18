@@ -21,22 +21,44 @@
     height: 60px;
     top: -4px;
     left: -80px;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 60px 60px;
+      background-position: 0 0;
+    }
   }
 
   &--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 
   &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
 
   &--dining::before {
     background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
 
   &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
@@ -70,6 +92,35 @@
       top: -112px;
       left: 0;
     }
+
+
+    &::after {
+      position: absolute;
+      height: 228px;
+      top: -220px;
+      left: 112px;
+      z-index: -1;
+      font-family: $font-family-title;
+      font-size: 281px;
+      color: $bgc-grey;
+    }
+
+    &--leaf::after {
+      content: "1";
+      left: 118px;
+    }
+
+    &--powder::after {
+      content: "2";
+    }
+
+    &--dining::after {
+      content: "3";
+    }
+
+    &--clock::after {
+      content: "4";
+    }
   }
 }
 
@@ -97,31 +148,8 @@
     }
 
     &::after {
-      position: absolute;
       height: 233px;
       top: -110px;
-      left: 112px;
-      z-index: -1;
-      font-family: $font-family-title;
-      font-size: 281px;
-      color: $bgc-grey;
-    }
-
-    &--leaf::after {
-      content: "1";
-      left: 118px;
-    }
-
-    &--powder::after {
-      content: "2";
-    }
-
-    &--dining::after {
-      content: "3";
-    }
-
-    &--clock::after {
-      content: "4";
     }
   }
 }
