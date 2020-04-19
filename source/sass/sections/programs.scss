@@ -11,6 +11,10 @@
   height: 305px;
   text-align: center;
   color: $color-white;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .programs__title {
@@ -250,6 +254,10 @@
       top: -197px;
       left: 609px;
       z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-mobile@2x.jpg");
+      }
     }
   }
 
