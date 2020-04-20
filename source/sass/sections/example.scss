@@ -38,10 +38,6 @@
   font-size: 12px;
 }
 
-.example__cat {
-  text-align: center;
-}
-
 .example__price {
   margin-top: 17px;
   margin-bottom: 35px;
@@ -52,10 +48,19 @@
   color: $color-black;
 }
 
-.example__cat-image {
+.example__cat {
+  text-align: center;
+  position: relative;
+  padding-top: 220px;
+}
 
+.example__cat-image {
   width: 311px;
   height: 232px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   &--before {
     background-image: url("../img/before-mobile@1x.png");
@@ -133,6 +138,7 @@
     position: relative;
     background: rgb(242, 242, 242)  linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 50%);
     min-height: 462px;
+    padding: 0;
   }
 
   .example__cat-image {
@@ -142,13 +148,10 @@
     //left: 46px;
     //height: 517px;
     //
-    position: absolute;
-    top: -160px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 690px;
     height: 517px;
 
+    top: -160px;
 
     &--after {
       display: block;
@@ -236,7 +239,6 @@
       margin-left: 60px;
     }
   }
-
 
   .example__cat-image {
     max-width: 690px;
