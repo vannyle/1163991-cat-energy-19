@@ -18,8 +18,9 @@
 }
 
 .programs__title {
-  line-height: 1;
+  margin: 0 20px;
   padding-top: 27px;
+  line-height: 1;
 }
 
 .programs__slogan {
@@ -203,21 +204,24 @@
       width: 200px;
       height: 200px;
       top: 89px;
-      left: 446px;
+      left: auto;
+      right: 62px;
     }
 
     &--slim::before {
       width: 141px;
       height: 194px;
       top: 79px;
-      left: 476px;
+      left: auto;
+      right: 90px;
     }
 
     &--pro::before {
       width: 268px;
       height: 113px;
       top: 133px;
-      left: 412px;
+      left: auto;
+      right: 28px;
     }
   }
 

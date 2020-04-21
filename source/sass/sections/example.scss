@@ -38,10 +38,6 @@
   font-size: 12px;
 }
 
-.example__cat {
-  text-align: center;
-}
-
 .example__price {
   margin-top: 17px;
   margin-bottom: 35px;
@@ -50,6 +46,34 @@
   font-weight: 600;
   text-transform: uppercase;
   color: $color-black;
+}
+
+.example__cat {
+  text-align: center;
+  position: relative;
+  padding-top: 220px;
+}
+
+.example__cat-image {
+  width: 311px;
+  height: 232px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &--before {
+    background-image: url("../img/before-mobile@1x.png");
+    background-color: $bgc-grey;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--after {
+    background-image: url("../img/after-mobile@1x.png");
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .example__before-after {
@@ -112,16 +136,39 @@
 
   .example__cat {
     position: relative;
-    background-color: $bgc-grey;
+    background: rgb(242, 242, 242)  linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 50%);
     min-height: 462px;
+    padding: 0;
   }
 
   .example__cat-image {
-    position: absolute;
-    top: -166px;
-    left: 46px;
+    //position: absolute;
+    //top: -166px;
+    //width: 690px;
+    //left: 46px;
+    //height: 517px;
+    //
     width: 690px;
     height: 517px;
+
+    top: -160px;
+
+    &--after {
+      display: block;
+      position: relative;
+      background-image: url("../img/after-tablet@1x.png");
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--before {
+      position: absolute;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      background-color: transparent;
+    }
   }
 
   .example__before-after {
@@ -147,7 +194,7 @@
   }
 
   .example__layout {
-    background-color: $bgc-grey;
+    background: rgb(242, 242, 242) linear-gradient(90deg, rgba(242, 242, 242, 1) 73%, rgba(234, 234, 234, 1) 73%);
   }
 
   .example__items {
@@ -196,8 +243,14 @@
   .example__cat-image {
     max-width: 690px;
     height: 517px;
-    top: -190px;
-    left: 140px;
+
+    &--after {
+      background-image: url("../img/after-desktop@1x.png");
+    }
+
+    &--before {
+      background-image: url("../img/before-desktop@1x.png");
+    }
   }
 
   .example__before-after {
