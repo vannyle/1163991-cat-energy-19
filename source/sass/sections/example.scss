@@ -50,29 +50,11 @@
 
 .example__cat {
   text-align: center;
-  position: relative;
-  padding-top: 220px;
 }
 
 .example__cat-image {
-  width: 311px;
-  height: 232px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-  &--before {
-    background-image: url("../img/before-mobile@1x.png");
-    background-color: $bgc-grey;
-    width: 100%;
-    height: 100%;
-  }
-
   &--after {
-    background-image: url("../img/after-mobile@1x.png");
-    width: 100%;
-    height: 100%;
+    display: none;
   }
 }
 
@@ -142,33 +124,11 @@
   }
 
   .example__cat-image {
-    //position: absolute;
-    //top: -166px;
-    //width: 690px;
-    //left: 46px;
-    //height: 517px;
-    //
+    position: absolute;
+    top: -166px;
     width: 690px;
+    left: 46px;
     height: 517px;
-
-    top: -160px;
-
-    &--after {
-      display: block;
-      position: relative;
-      background-image: url("../img/after-tablet@1x.png");
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-    }
-
-    &--before {
-      position: absolute;
-      background-size: cover;
-      width: 50%;
-      height: 100%;
-      background-color: transparent;
-    }
   }
 
   .example__before-after {
