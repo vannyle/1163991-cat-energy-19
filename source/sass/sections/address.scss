@@ -1,5 +1,10 @@
 .address {
   padding-bottom: 0;
+
+  &--catalog,
+  &--form {
+    background-color: $bgc-grey;
+  }
 }
 
 .address__header {
@@ -73,16 +78,13 @@
   .address__map {
     height: 400px;
     padding-bottom: 0;
-
-    &--form {
-      height: 396px;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .address {
     position: relative;
+    background-color: $color-white;
   }
 
   .address__header {

@@ -59,8 +59,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-color: $color-white;
-    mask-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     width: 56px;
     height: 61px;
     top: 65px;
@@ -82,6 +81,7 @@
     padding: 0 37px;
     min-height: 140px;
     justify-content: flex-start;
+    border: $border-line;
   }
 
   .others__item-wrapper {
@@ -137,6 +137,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-left: none;
+    border-right: none;
   }
 
   .others__item-wrapper {

@@ -37,6 +37,7 @@
 .comment,
 .additional {
   border-bottom: none;
+  position: relative;
 }
 
 .form__info,
@@ -54,10 +55,38 @@
   padding: 20px 0 23px;
 }
 
+.owner .form__title {
+  max-width: 203px;
+}
+
 .form__title {
+  display: inline-flex;
+  background-color: #ffffff;
   font-size: 24px;
   padding-top: 25px;
   line-height: 1;
+  padding-right: 22px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 38px;
+    content: "";
+    display: block;
+    background-color: $color-green;
+    width: 200%;
+    height: 3px;
+    z-index: -2;
+  }
+
+  &::before {
+    right: 0;
+    display: none;
+  }
+
+  &::after {
+    left: 0;
+  }
 }
 
 .form__field,
@@ -89,7 +118,7 @@
 .tick__item,
 .checkbox__item {
   position: relative;
-  padding-left: 40px;
+  padding-left: 46px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -162,7 +191,6 @@
   left: 4px;
 }
 
-
 .form__item label {
   margin-right: 15px;
   text-transform: uppercase;
@@ -191,8 +219,8 @@
 }
 
 .owner__info {
-  min-height: 168px;
-  padding: 25px 0 30px;
+  min-height: 142px;
+  padding: 25px 0 5px;
 }
 
 .owner__info label {
@@ -221,7 +249,7 @@
 }
 
 .comment__title {
-  padding: 0 0 33px;
+  padding-bottom: 33px;
 }
 
 .comment textarea {
@@ -286,8 +314,8 @@
   }
 
   .form__radio {
-    padding: 25px 28px 12px;
-    margin-bottom: 50px;
+    padding: 27px 28px 0;
+    margin-bottom: 53px;
     border: $border-input;
   }
 
@@ -298,7 +326,7 @@
   }
 
   .form__tick {
-    margin-bottom: 13px;
+    margin-bottom: 24px;
   }
 
   .form__tick input {
@@ -306,7 +334,23 @@
   }
 
   .form__title {
+    padding-right: 40px;
     font-size: 36px;
+
+    &::before,
+    &::after {
+      top: 49px;
+    }
+
+    &::before {
+      display: block;
+      width: 30px;
+      left: -70px;
+    }
+  }
+
+  .owner .form__title {
+    max-width: 100%;
   }
 
   .pet-info {
@@ -314,25 +358,22 @@
   }
 
   .owner__info {
-    padding: 55px 0 30px;
+    padding: 55px 0 39px;
   }
 
   .pet-info,
   .additional__info {
-    min-height: 222px;
+    min-height: 217px;
   }
 
   .comment {
     margin-bottom: 35px;
   }
 
-  .comment__title {
-    padding: 34px 0 77px;
-  }
-
   .comment textarea {
     min-height: 174px;
     padding-left: 17px;
+    margin-top: 44px;
   }
 
   .form__checkbox {
@@ -343,6 +384,30 @@
 
   .form__box {
     min-width: 45%;
+  }
+
+  .checkbox__item,
+  .tick__item {
+    padding-left: 58px;
+  }
+
+  .checkbox__mark,
+  .tick__mark {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+  }
+
+  .tick__item .tick__mark::after {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .checkbox__item .checkbox__mark::after {
+    top: 10px;
+    left: 7px;
   }
 
   .selection__submit {
@@ -389,18 +454,33 @@
   }
 
   .form__radio {
+    min-height: 196px;
     margin: 0;
-    padding: 25px 28px 15px;
+    padding: 25px 28px 16px;
+  }
+
+  .form__tick {
+    margin-bottom: 17px;
   }
 
   .form__title {
-    padding: 0;
+    padding: 0 40px 0 0;
+
+    &::before,
+    &::after {
+      top: 20px;
+    }
+
+    &::before {
+      width: 160px;
+      left: -200px;
+    }
   }
 
   .owner__info {
     flex-direction: row;
     min-height: 52px;
-    padding: 54px 0 43px;
+    padding: 49px 0 70px;
   }
 
   .owner__info .form__field {
@@ -413,15 +493,15 @@
   }
 
   .comment {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 
-  .comment__title {
-    padding: 25px 0 76px;
+  .comment textarea {
+    margin-top: 70px;
   }
 
   .additional__info {
-    min-height: 160px;
+    min-height: 143px;
   }
 
   .form__box {
@@ -429,7 +509,8 @@
   }
 
   .selection__submit {
-    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 
   .submit__item {
