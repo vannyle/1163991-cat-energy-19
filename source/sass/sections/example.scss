@@ -126,8 +126,9 @@
   .example__cat-image {
     position: absolute;
     top: -166px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 690px;
-    left: 46px;
     height: 517px;
   }
 
@@ -200,9 +201,15 @@
     }
   }
 
+  .example__cat {
+    background: none;
+  }
+
   .example__cat-image {
     max-width: 690px;
     height: 517px;
+    top: -193px;
+    left: 61.5%;
 
     &--after {
       background-image: url("../img/after-desktop@1x.png");
