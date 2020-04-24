@@ -20,7 +20,8 @@
     height: 31px;
     opacity: 0.2;
     top: -54px;
-    left: 86px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -29,6 +30,7 @@
   color: $text-color;
   background-color: $bgc-grey;
   font-size: 16px;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -47,12 +49,14 @@
   }
 
   .more-items__title {
+    font-size: 20px;
+    margin: 0 35px;
+
     &::before {
       background-image: url("../img/icon-plus.svg");
       width: 61px;
       height: 61px;
-      top: -110px;
-      left: 38px;
+      top: -102px;
     }
   }
 
@@ -67,6 +71,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .more-items__title {
+    margin: 0;
+  }
+
   .more-items__slogan {
     margin: 24px 0 0;
   }
