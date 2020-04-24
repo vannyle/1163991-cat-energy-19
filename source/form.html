@@ -21,30 +21,22 @@
         <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
       </picture>
     </a>
-    <!--    <div class="page-header__toggle toggle toggle__close">-->
-    <button class="page-header__toggle toggle toggle__close toggle__nojs">
+    <button class="page-header__toggle page-header__toggle--close page-header__toggle--nojs">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <!--      <button class="toggle__btn&#45;&#45;close" type="button">-->
-    <!--        <span class="visually-hidden">Открыть меню</span>-->
-    <!--      </button>-->
-    <!--      <button class="toggle__btn&#45;&#45;open" type="button">-->
-    <!--        <span class="visually-hidden">Закрыть меню</span>-->
-    <!--      </button>-->
-    <!--  </div>-->
   </div>
-  <nav class="page-header__nav nav nav__close nav__nojs">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="nav__link" href="index.html">Главная</a>
+  <nav class="page-header__nav page-header__nav--close page-header__nav--nojs">
+    <ul class="page-header__nav-list">
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link" href="index.html">Главная</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link" href="catalog.html">Каталог продукции</a>
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link" href="catalog.html">Каталог продукции</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link nav__link--active" href="#">Подбор программы</a>
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link page-header__nav-link--active" href="#">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -56,19 +48,19 @@
       <h2 class="selection__title">Подбор программы</h2>
       <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
-    <form class="selection__form form__list" action="https://echo.htmlacademy.ru" method="get">
+    <form class="selection__form form" action="https://echo.htmlacademy.ru" method="get">
       <div class="form__pet-info">
         <div class="form__item">
           <ul class="form__info pet-info row">
-            <li class="form__field pet-info__name">
+            <li class="form__field">
               <label for="pet-name">Имя:*</label>
               <input type="text" name="name" id="pet-name" placeholder="Барсик" required="">
             </li>
-            <li class="form__field pet-info__weight">
+            <li class="form__field">
               <label for="pet-weight">Вес (кг):*</label>
               <input type="number" name="weight" id="pet-weight" placeholder="7" required="">
             </li>
-            <li class="form__field pet-info__age">
+            <li class="form__field">
               <label for="pet-age">Возраст (лет):</label>
               <input type="number" name="age" id="pet-age" placeholder="7">
             </li>

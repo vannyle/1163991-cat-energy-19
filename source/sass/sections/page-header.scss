@@ -17,20 +17,20 @@
   }
 }
 
-.nav {
+.page-header__nav {
   align-self: center;
 }
 
 @media (max-width: $mobile-width-only) {
-  .nav__open {
+  .page-header__nav--open {
     display: block;
   }
 
-  .nav__close {
+  .page-header__nav--close {
     display: none;
   }
 
-  .nav__nojs {
+  .page-header__nav--nojs {
     display: block;
   }
 
@@ -46,8 +46,8 @@
     cursor: pointer;
   }
 
-  .toggle__close span,
-  .toggle__open span {
+  .page-header__toggle--close span,
+  .page-header__toggle--open span {
     position: absolute;
     display: block;
     width: 100%;
@@ -58,35 +58,35 @@
     transition: 0.25s ease-in-out;
   }
 
-  .toggle__close span:nth-child(1) {
+  .page-header__toggle--close span:nth-child(1) {
     top: 10px;
   }
 
-  .toggle__close span:nth-child(2) {
+  .page-header__toggle--close span:nth-child(2) {
     top: 18px;
   }
 
-  .toggle__close span:nth-child(3) {
+  .page-header__toggle--close span:nth-child(3) {
     top: 26px;
   }
 
-  .toggle__open span:nth-child(1) {
+  .page-header__toggle--open span:nth-child(1) {
     top: 18px;
     transform: rotate(135deg);
   }
 
-  .toggle__open span:nth-child(2) {
+  .page-header__toggle--open span:nth-child(2) {
     opacity: 0;
     top: 18px;
     left: -5px;
   }
 
-  .toggle__open span:nth-child(3) {
+  .page-header__toggle--open span:nth-child(3) {
     top: 18px;
     transform: rotate(-135deg);
   }
 
-  .toggle__nojs {
+  .page-header__toggle--nojs {
     display: none;
   }
 
@@ -146,17 +146,17 @@
   //}
 }
 
-.nav__list {
+.page-header__nav-list {
   list-style: none;
   text-align: center;
 }
 
-.nav__item {
+.page-header__nav-item {
   padding: 18px 0;
   border-bottom: $border-line;
 }
 
-.nav__link {
+.page-header__nav-link {
   font-family: $font-family-title;
   font-size: 20px;
   color: $color-black;
@@ -200,24 +200,24 @@
     display: none;
   }
 
-  .nav {
+  .page-header__nav {
     flex-grow: 1;
     width: 440px;
   }
 
-  .nav__list {
+  .page-header__nav-list {
     margin-top: 11px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
 
-  .nav__item {
+  .page-header__nav-item {
     margin-left: 34px;
     border: none;
   }
 
-  .nav__link {
+  .page-header__nav-link {
     font-size: 18px;
     letter-spacing: 0.1px;
     font-weight: 400;
@@ -241,11 +241,11 @@
     height: 60px;
   }
 
-  .nav__item {
+  .page-header__nav-item {
     margin-left: 32px;
   }
 
-  .nav__link {
+  .page-header__nav-link {
     font-size: 20px;
 
     &--index {

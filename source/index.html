@@ -21,30 +21,22 @@
         <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
       </picture>
     </a>
-    <!--    <div class="page-header__toggle toggle toggle__close">-->
-    <button class="page-header__toggle toggle toggle__close toggle__nojs">
+    <button class="page-header__toggle page-header__toggle--close page-header__toggle--nojs">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <!--      <button class="toggle__btn&#45;&#45;close" type="button">-->
-    <!--        <span class="visually-hidden">Открыть меню</span>-->
-    <!--      </button>-->
-    <!--      <button class="toggle__btn&#45;&#45;open" type="button">-->
-    <!--        <span class="visually-hidden">Закрыть меню</span>-->
-    <!--      </button>-->
-    <!--  </div>-->
   </div>
-  <nav class="page-header__nav nav nav__close nav__nojs">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="nav__link nav__link--index nav__link--index-active nav__link--active" href="#">Главная</a>
+  <nav class="page-header__nav page-header__nav--close page-header__nav--nojs">
+    <ul class="page-header__nav-list">
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link page-header__nav-link--active page-header__nav-link--index page-header__nav-link--index-active" href="index.html">Главная</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link nav__link--index" href="catalog.html">Каталог продукции</a>
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link page-header__nav-link--index" href="catalog.html">Каталог продукции</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link nav__link--index" href="form.html">Подбор программы</a>
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link page-header__nav-link--index" href="form.html">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -63,20 +55,20 @@
       </picture>
       <a class="programs__select button" href="form.html">Подобрать программу</a>
     </div>
-    <div class="programs__list">
-      <div class="programs__item programs__item--slim">
+    <ul class="programs__list">
+      <li class="programs__item programs__item--slim">
         <h3 class="programs__name programs__name--slim">Похудение</h3>
         <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="programs__link" href="#">Каталог Slim</a>
-      </div>
-      <div class="programs__item programs__item--pro">
+      </li>
+      <li class="programs__item programs__item--pro">
         <h3 class="programs__name programs__name--pro">Набор массы</h3>
         <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="programs__link" href="#">Каталог Pro</a>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
   <section class="advantages">
     <div class="advantages__wrapper row">
