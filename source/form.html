@@ -49,9 +49,9 @@
       <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="selection__form form" action="https://echo.htmlacademy.ru" method="get">
-      <div class="form__pet-info">
+      <div class="form__pet">
         <div class="form__item">
-          <ul class="form__info pet-info row">
+          <ul class="form__info form__pet-info row">
             <li class="form__field">
               <label for="pet-name">Имя:*</label>
               <input type="text" name="name" id="pet-name" placeholder="Барсик" required="">
@@ -67,91 +67,91 @@
           </ul>
         </div>
         <div class="form__item">
-          <ul class="form__radio program-radio row">
-            <li class="form__tick tick">
-              <label class="tick__item" for="slim-program">
+          <ul class="form__radio row">
+            <li class="form__tick">
+              <label class="form__tick-item" for="slim-program">
                 <input type="radio" name="program" value="slim" id="slim-program" checked="checked">
-                <span class="tick__mark"></span>
+                <span class="form__tick-mark"></span>
                 Похудение
               </label>
             </li>
-            <li class="form__tick tick">
-              <label class="tick__item" for="pro-program">
+            <li class="form__tick">
+              <label class="form__tick-item" for="pro-program">
                 <input type="radio" name="program" value="pro" id="pro-program">
                 Набор массы
-                <span class="tick__mark"></span>
+                <span class="form__tick-mark"></span>
               </label>
             </li>
-            <li class="form__tick tick">
-              <label class="tick__item" for="others">
+            <li class="form__tick">
+              <label class="form__tick-item" for="others">
                 <input type="radio" name="program" value="other" id="others">
                 Не знаю (Нужен ваш совет)
-                <span class="tick__mark"></span>
+                <span class="form__tick-mark"></span>
               </label>
             </li>
           </ul>
         </div>
       </div>
-      <div class="form__item owner row">
+      <div class="form__item form__owner row">
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
-        <ul class="form__info owner__info">
-          <li class="form__field owner__items">
+        <ul class="form__info form__owner-info">
+          <li class="form__field form__owner-items">
             <label for="email">E-mail:*</label>
-            <svg class="owner__item owner__item--email" width="18" height="14">
+            <svg class="form__owner-item form__owner-item--email" width="18" height="14">
               <use xlink:href="#icon-mail"></use>
             </svg>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
           </li>
-          <li class="form__field owner__items">
+          <li class="form__field form__owner-items">
             <label for="phone-number">Телефон:*</label>
-            <svg class="owner__item owner__item--phone" width="21" height="21">
+            <svg class="form__owner-item form__owner-item--phone" width="21" height="21">
               <use xlink:href="#icon-phone"></use>
             </svg>
             <input type="tel" name="phone" id="phone-number" placeholder="8 (960) 900-60-90" required="">
           </li>
         </ul>
       </div>
-      <div class="form__item comment row">
-        <h3 class="form__title comment__title">Комментарий</h3>
+      <div class="form__item form__comment row">
+        <h3 class="form__title form__comment-title">Комментарий</h3>
         <label class="visually-hidden" for="comment">Написать комментарий</label>
         <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
-      <div class="form__item additional row">
+      <div class="form__item form__additional row">
         <h3 class="form__title">Дополнительно</h3>
-        <ul class="form__checkbox additional__info">
-          <li class="form__box checkbox">
-            <label class="checkbox__item" for="sweetener">
+        <ul class="form__checkbox form__additional-info">
+          <li class="form__box form__checkbox">
+            <label class="form__checkbox-item" for="sweetener">
               <input type="checkbox" name="option" value="sweetener" id="sweetener" checked="checked">
               Сахарозаменитель
-              <span class="checkbox__mark"></span>
+              <span class="form__checkbox--mark"></span>
               </label>
           </li>
           <li class="form__box checkbox">
-            <label class="checkbox__item" for="water">
+            <label class="form__checkbox-item" for="water">
               <input type="checkbox" name="option" value="water" id="water">
               Питьевая вода
-              <span class="checkbox__mark"></span>
+              <span class="form__checkbox-mark"></span>
             </label>
           </li>
           <li class="form__box checkbox">
-            <label class="checkbox__item" for="milk">
+            <label class="form__checkbox-item" for="milk">
               <input type="checkbox" name="option" value="milk" id="milk">
               Молоко
-              <span class="checkbox__mark"></span>
+              <span class="form__checkbox-mark"></span>
             </label>
           </li>
           <li class="form__box checkbox">
-            <label class="checkbox__item" for="vitamin">
+            <label class="form__checkbox-item" for="vitamin">
               <input type="checkbox" name="option" value="vitamin" id="vitamin">
               Витамины
-              <span class="checkbox__mark"></span>
+              <span class="form__checkbox-mark"></span>
             </label>
           </li>
         </ul>
       </div>
-      <div class="selection__submit submit row">
-        <button class="submit__item submit__item-button button" type="submit">Отправить заявку</button>
-        <p class="submit__item submit__item-require">* — Обязательные поля</p>
+      <div class="selection__submit row">
+        <button class="selection__submit-item selection__submit-button button" type="submit">Отправить заявку</button>
+        <p class="selection__submit-item selection__submit-require">* — Обязательные поля</p>
       </div>
     </form>
   </section>

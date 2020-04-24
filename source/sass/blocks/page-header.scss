@@ -89,61 +89,6 @@
   .page-header__toggle--nojs {
     display: none;
   }
-
-  //.toggle__btn--close,
-  //.toggle__btn--open {
-  //  background-color: $color-white;
-  //  border: none;
-  //  outline: none;
-  //}
-  //
-  //.toggle__close .toggle__btn--close {
-  //  display: block;
-  //}
-  //
-  //.toggle__close .toggle__btn--open {
-  //  display: none;
-  //}
-  //
-  //.toggle__open .toggle__btn--open {
-  //  display: block;
-  //}
-  //
-  //.toggle__open .toggle__btn--close {
-  //  display: none;
-  //}
-  //
-  //.toggle__btn--close::before {
-  //  content: "";
-  //  position: absolute;
-  //  top: 10px;
-  //  right: 0;
-  //  width: 24px;
-  //  height: 2px;
-  //  background-color: $color-dark;
-  //  box-shadow: 0 8px 0 0 $color-dark, 0 16px 0 0 $color-dark;
-  //  transition: 0.5s ease-in-out;
-  //}
-  //
-  //.toggle__btn--open::before,
-  //.toggle__btn--open::after {
-  //  content: "";
-  //  position: absolute;
-  //  top: 18px;
-  //  right: 0;
-  //  width: 25px;
-  //  height: 2px;
-  //  background-color: $color-dark;
-  //}
-  //
-  //.toggle__btn--open::before {
-  //  transform: rotate(45deg);
-  //  box-shadow: none;
-  //}
-  //
-  //.toggle__btn--open::after {
-  //  transform: rotate(-45deg);
-  //}
 }
 
 .page-header__nav-list {
