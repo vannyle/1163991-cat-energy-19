@@ -3,8 +3,32 @@
 }
 
 .others__title {
-  padding: 25px 0 27px;
+  position: relative;
+  display: inline-flex;
+  padding: 25px 22px 27px 0;
+  background-color: $color-white;
   font-size: 24px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 42px;
+    content: "";
+    display: block;
+    background-color: $color-green;
+    width: 100vw;
+    height: 3px;
+    z-index: -2;
+  }
+
+  &::before {
+    right: 0;
+    display: none;
+  }
+
+  &::after {
+    left: 0;
+  }
 }
 
 .others__list {
@@ -73,8 +97,17 @@
   }
 
   .others__title {
-    padding: 37px 39px 73px;
+    padding: 37px 37px 73px;
     font-size: 36px;
+
+    &::before,
+    &::after {
+      top: 69px;
+    }
+
+    &::before {
+      display: block;
+    }
   }
 
   .others__item {
@@ -120,11 +153,21 @@
 
 @media (min-width: $desktop-width) {
   .others {
-    padding-bottom: 86px;
+    padding-bottom: 88px;
   }
 
   .others__title {
-    padding: 41px 0 72px;
+    padding: 41px 35px 72px 0;
+
+    &::before,
+    &::after {
+      top: 74px;
+    }
+
+    &::before {
+      width: 160px;
+      left: -200px;
+    }
   }
 
   .others__layout {
@@ -132,7 +175,7 @@
   }
 
   .others__item {
-    padding: 10px 0 0;
+    padding: 13px 0 0;
     min-height: 72px;
     flex-direction: row;
     justify-content: space-between;
@@ -172,8 +215,7 @@
   }
 
   .others__slogan {
-
-    padding: 187px 40px 0;
+    padding: 189px 40px 0;
     text-align: center;
 
     &::before {
