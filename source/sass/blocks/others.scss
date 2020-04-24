@@ -70,6 +70,10 @@
   width: 280px;
   min-height: 289px;
   margin: 39px auto 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .others__slogan {
@@ -139,6 +143,10 @@
     width: 100%;
     min-height: 200px;
     margin-top: 66px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .others__slogan {
@@ -212,6 +220,10 @@
     height: 289px;
     margin-left: 80px;
     margin-top: -1px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .others__slogan {

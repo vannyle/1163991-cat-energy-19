@@ -118,7 +118,7 @@
 
   .example__cat {
     position: relative;
-    background: rgb(242, 242, 242)  linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 50%);
+    background: rgb(242, 242, 242) linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 50%);
     min-height: 462px;
     padding: 0;
   }
@@ -241,14 +241,6 @@
     height: 517px;
     top: -193px;
     left: 61.5%;
-
-    &--after {
-      background-image: url("../img/after-desktop@1x.png");
-    }
-
-    &--before {
-      background-image: url("../img/before-desktop@1x.png");
-    }
   }
 
   .example__before-after {
@@ -256,3 +248,4 @@
     margin-left: 219px;
   }
 }
+
