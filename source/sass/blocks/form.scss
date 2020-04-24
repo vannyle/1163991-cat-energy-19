@@ -37,10 +37,6 @@
   padding: 20px 0 23px;
 }
 
-.form__owner .form__title {
-  max-width: 203px;
-}
-
 .form__title {
   display: inline-flex;
   background-color: #ffffff;
@@ -48,6 +44,10 @@
   padding-top: 25px;
   line-height: 1;
   padding-right: 22px;
+
+  .form__owner & {
+    max-width: 203px;
+  }
 
   &::before,
   &::after {
@@ -289,6 +289,10 @@
     padding-right: 40px;
     font-size: 36px;
 
+    .form__owner & {
+      max-width: 100%;
+    }
+
     &::before,
     &::after {
       top: 49px;
@@ -299,10 +303,6 @@
       width: 30px;
       left: -70px;
     }
-  }
-
-  .form__owner .form__title {
-    max-width: 100%;
   }
 
   .form__pet-info {
@@ -370,10 +370,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  .form__pet .form__item {
-    flex-basis: 46.7%;
+    & .form__item {
+      flex-basis: 46.7%;
+    }
   }
 
   .form__radio {
@@ -404,10 +404,10 @@
     flex-direction: row;
     min-height: 52px;
     padding: 49px 0 70px;
-  }
 
-  .form__owner-info .form__field {
-    flex-basis: 46.7%;
+    & .form__field {
+      flex-basis: 46.7%;
+    }
   }
 
   .form__owner-item {

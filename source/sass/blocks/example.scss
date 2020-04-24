@@ -140,39 +140,6 @@
     justify-content: space-between;
     font-size: 20px;
   }
-
-  .comparison__item {
-    border-bottom: 1px dotted #bebebe;
-  }
-
-  .comparison__range {
-    appearance: none;
-    width: 75%;
-    height: 6px;
-    background: $range-color;
-    border-radius: 2.5px;
-  }
-
-  .comparison__range::-webkit-slider-thumb {
-    appearance: none;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: $color-green;
-    border: 13px solid #ffffff;
-    box-shadow: 0 2px 5px 3px #cdcdcd;
-    cursor: pointer;
-  }
-
-  .slider::-moz-range-thumb {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: $color-green;
-    border: 13px solid #ffffff;
-    box-shadow: 0 2px 5px 3px #cdcdcd;
-    cursor: pointer;
-  }
 }
 
 @media (min-width: $desktop-width) {

@@ -1,0 +1,34 @@
+@media (min-width: $tablet-width) {
+  .comparison__item {
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .comparison__range {
+    appearance: none;
+    width: 75%;
+    height: 6px;
+    background: $range-color;
+    border-radius: 2.5px;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: $color-green;
+      border: 13px solid #ffffff;
+      box-shadow: 0 2px 5px 3px #cdcdcd;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: $color-green;
+      border: 13px solid #ffffff;
+      box-shadow: 0 2px 5px 3px #cdcdcd;
+      cursor: pointer;
+    }
+  }
+}
