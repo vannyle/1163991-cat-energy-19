@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы Cat Energy</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/app.js"></script>
+  <script src="js/picturefill.js"></script>
 </head>
 <body>
 <div style="display: none;">
@@ -19,12 +21,21 @@
         <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
       </picture>
     </a>
-    <button class="page-header__toggle toggle toggle--close toggle--nojs" type="button">
-      <img class="toggle--btn-close" src="img/icon-close.svg" width="25" height="19" alt="Закрыть меню">
-      <img class="toggle--btn-open" src="img/icon-mobile-menu.svg" width="25" height="19" alt="Открыть меню">
+    <!--    <div class="page-header__toggle toggle toggle__close">-->
+    <button class="page-header__toggle toggle toggle__close toggle__nojs">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
+    <!--      <button class="toggle__btn&#45;&#45;close" type="button">-->
+    <!--        <span class="visually-hidden">Открыть меню</span>-->
+    <!--      </button>-->
+    <!--      <button class="toggle__btn&#45;&#45;open" type="button">-->
+    <!--        <span class="visually-hidden">Закрыть меню</span>-->
+    <!--      </button>-->
+    <!--  </div>-->
   </div>
-  <nav class="page-header__nav nav nav--close nav--nojs">
+  <nav class="page-header__nav nav nav__close nav__nojs">
     <ul class="nav__list">
       <li class="nav__item">
         <a class="nav__link" href="index.html">Главная</a>
@@ -209,6 +220,4 @@
   </div>
 </footer>
 </body>
-<script src="js/app.js"></script>
-<script src="js/picturefill.js"></script>
 </html>

@@ -1,20 +1,21 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const navMain = document.querySelector('.nav');
+  const navToggle = document.querySelector('.toggle');
 
-const navMain = document.querySelector('.nav');
-const navToggle = document.querySelector('.toggle');
+  navToggle.classList.remove('toggle__nojs');
+  navMain.classList.remove('nav__nojs');
 
-navToggle.classList.remove('toggle--nojs');
-navMain.classList.remove('nav--nojs');
-
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('nav--open')) {
-    navMain.classList.remove('nav--open');
-    navMain.classList.add('nav--close');
-    navToggle.classList.remove('toggle--open');
-    navToggle.classList.add('toggle--close')
-  } else {
-    navMain.classList.remove('nav--close');
-    navMain.classList.add('nav--open');
-    navToggle.classList.remove('toggle--close');
-    navToggle.classList.add('toggle--open')
-  }
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('nav__close')) {
+      navMain.classList.remove('nav__close');
+      navMain.classList.add('nav__open');
+      navToggle.classList.remove('toggle__close');
+      navToggle.classList.add('toggle__open')
+    } else {
+      navMain.classList.remove('nav__open');
+      navMain.classList.add('nav__close');
+      navToggle.classList.remove('toggle__open');
+      navToggle.classList.add('toggle__close')
+    }
+  })
 });

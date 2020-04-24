@@ -126,13 +126,14 @@
   .example__cat-image {
     position: absolute;
     top: -166px;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
     width: 690px;
     height: 517px;
   }
 
   .example__before-after {
+    align-items: center;
     padding-top: 364px;
     width: 571px;
     margin: 0 auto;
@@ -142,6 +143,35 @@
 
   .comparison__item {
     border-bottom: 1px dotted #bebebe;
+  }
+
+  .comparison__range {
+    appearance: none;
+    width: 75%;
+    height: 6px;
+    background: $range-color;
+    border-radius: 2.5px;
+  }
+
+  .comparison__range::-webkit-slider-thumb {
+    appearance: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $color-green;
+    border: 13px solid #ffffff;
+    box-shadow: 0 2px 5px 3px #cdcdcd;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $color-green;
+    border: 13px solid #ffffff;
+    box-shadow: 0 2px 5px 3px #cdcdcd;
+    cursor: pointer;
   }
 }
 
@@ -164,6 +194,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    background: rgb(242, 242, 242) linear-gradient(90deg, rgba(242, 242, 242, 1) 76.7%, rgba(234, 234, 234, 1) 76.7%);
   }
 
   .example__wrapper {
