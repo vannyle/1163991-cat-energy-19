@@ -9,4 +9,15 @@
   height: 34px;
   margin-top: 3px;
   fill: $color-icons;
+
+  &:hover,
+  &:focus {
+    fill: $color-green;
+  }
+
+  &:active {
+    fill: $color-green;
+    opacity: 0.3;
+  }
 }
+
