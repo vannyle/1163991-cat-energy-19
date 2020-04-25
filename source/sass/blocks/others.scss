@@ -3,8 +3,32 @@
 }
 
 .others__title {
-  padding: 25px 0 27px;
+  position: relative;
+  display: inline-flex;
+  padding: 25px 22px 27px 0;
+  background-color: $color-white;
   font-size: 24px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 42px;
+    content: "";
+    display: block;
+    background-color: $color-green;
+    width: 100vw;
+    height: 3px;
+    z-index: -2;
+  }
+
+  &::before {
+    right: 0;
+    display: none;
+  }
+
+  &::after {
+    left: 0;
+  }
 }
 
 .others__list {
@@ -46,6 +70,10 @@
   width: 280px;
   min-height: 289px;
   margin: 39px auto 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .others__slogan {
@@ -59,8 +87,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-color: $color-white;
-    mask-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     width: 56px;
     height: 61px;
     top: 65px;
@@ -74,14 +101,24 @@
   }
 
   .others__title {
-    padding: 37px 39px 73px;
+    padding: 37px 37px 73px;
     font-size: 36px;
+
+    &::before,
+    &::after {
+      top: 69px;
+    }
+
+    &::before {
+      display: block;
+    }
   }
 
   .others__item {
     padding: 0 37px;
     min-height: 140px;
     justify-content: flex-start;
+    border: $border-line;
   }
 
   .others__item-wrapper {
@@ -106,6 +143,10 @@
     width: 100%;
     min-height: 200px;
     margin-top: 66px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .others__slogan {
@@ -120,11 +161,21 @@
 
 @media (min-width: $desktop-width) {
   .others {
-    padding-bottom: 86px;
+    padding-bottom: 88px;
   }
 
   .others__title {
-    padding: 41px 0 72px;
+    padding: 41px 35px 72px 0;
+
+    &::before,
+    &::after {
+      top: 74px;
+    }
+
+    &::before {
+      width: 160px;
+      left: -200px;
+    }
   }
 
   .others__layout {
@@ -132,11 +183,13 @@
   }
 
   .others__item {
-    padding: 10px 0 0;
+    padding: 13px 0 0;
     min-height: 72px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-left: none;
+    border-right: none;
   }
 
   .others__item-wrapper {
@@ -167,11 +220,14 @@
     height: 289px;
     margin-left: 80px;
     margin-top: -1px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .others__slogan {
-
-    padding: 187px 40px 0;
+    padding: 189px 40px 0;
     text-align: center;
 
     &::before {

@@ -54,10 +54,10 @@
   min-height: 266px;
   flex-basis: 100%;
   background-color: $bgc-grey;
-}
 
-.programs__item--slim {
-  margin-bottom: 20px;
+  &--slim {
+    margin-bottom: 20px;
+  }
 }
 
 .programs__name {
@@ -152,8 +152,7 @@
 
   .programs__title {
     width: 415px;
-    margin-top: 20px;
-    margin-bottom: 6px;
+    margin: 20px 0 6px;
   }
 
   .programs__slogan {
@@ -260,7 +259,7 @@
       z-index: -1;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-mobile@2x.jpg");
+        background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
   }
@@ -271,8 +270,7 @@
   }
 
   .programs__title {
-    margin-top: 29px;
-    margin-bottom: 5px;
+    margin: 29px 0 5px;
   }
 
   .programs__select {

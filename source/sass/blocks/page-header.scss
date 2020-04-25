@@ -17,65 +17,91 @@
   }
 }
 
-.nav {
+.page-header__nav {
   align-self: center;
 }
 
 @media (max-width: $mobile-width-only) {
-  .nav--open {
+  .page-header__nav--open {
     display: block;
   }
 
-  .nav--close {
+  .page-header__nav--close {
     display: none;
   }
 
-  .nav--nojs {
+  .page-header__nav--nojs {
     display: block;
   }
 
   .page-header__toggle {
-    background-color: $color-white;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    transform: rotate(0deg);
+    background: $color-white;
     border: none;
     outline: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
 
-  .toggle--open .toggle--btn-close {
+  .page-header__toggle--close span,
+  .page-header__toggle--open span {
+    position: absolute;
     display: block;
+    width: 100%;
+    height: 2px;
+    background: $color-dark;
+    border-radius: 2px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
   }
 
-  .toggle--open .toggle--btn-open {
-    display: none;
+  .page-header__toggle--close span:nth-child(1) {
+    top: 10px;
   }
 
-  .toggle--close .toggle--btn-close {
-    display: none;
+  .page-header__toggle--close span:nth-child(2) {
+    top: 18px;
   }
 
-  .toggle--close .toggle--btn-open {
-    display: block;
+  .page-header__toggle--close span:nth-child(3) {
+    top: 26px;
   }
 
-  .toggle--nojs .toggle--btn-open {
-    display: none;
+  .page-header__toggle--open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
   }
 
-  .toggle--nojs .toggle--btn-close {
+  .page-header__toggle--open span:nth-child(2) {
+    opacity: 0;
+    top: 18px;
+    left: -5px;
+  }
+
+  .page-header__toggle--open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+  }
+
+  .page-header__toggle--nojs {
     display: none;
   }
 }
 
-.nav__list {
+.page-header__nav-list {
   list-style: none;
   text-align: center;
 }
 
-.nav__item {
+.page-header__nav-item {
   padding: 18px 0;
   border-bottom: $border-line;
 }
 
-.nav__link {
+.page-header__nav-link {
   font-family: $font-family-title;
   font-size: 20px;
   color: $color-black;
@@ -119,24 +145,24 @@
     display: none;
   }
 
-  .nav {
+  .page-header__nav {
     flex-grow: 1;
     width: 440px;
   }
 
-  .nav__list {
+  .page-header__nav-list {
     margin-top: 11px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
 
-  .nav__item {
+  .page-header__nav-item {
     margin-left: 34px;
     border: none;
   }
 
-  .nav__link {
+  .page-header__nav-link {
     font-size: 18px;
     letter-spacing: 0.1px;
     font-weight: 400;
@@ -160,11 +186,11 @@
     height: 60px;
   }
 
-  .nav__item {
+  .page-header__nav-item {
     margin-left: 32px;
   }
 
-  .nav__link {
+  .page-header__nav-link {
     font-size: 20px;
 
     &--index {
