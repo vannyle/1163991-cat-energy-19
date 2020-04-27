@@ -4,6 +4,8 @@
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
@@ -11,6 +13,7 @@
     "cwebp-bin": "^5.1.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
@@ -20,6 +23,7 @@
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.4.3",
     "stylelint": "10.1.x",
@@ -48,6 +52,8 @@
     "node": "8.16"
   },
   "dependencies": {
-    "node.normalize.scss": "^3.0.3"
+    "gulp-htmlmin": "^5.0.1",
+    "node.normalize.scss": "^3.0.3",
+    "readable-stream": "^3.6.0"
   }
 }
