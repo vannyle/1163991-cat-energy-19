@@ -113,26 +113,36 @@
 
 .programs__link {
   position: relative;
+  display: inline-flex;
+  align-items: center;
   font-family: $font-family-title;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
   font-size: 16px;
 
-  &::after {
+  &:hover .programs__icon-link,
+  &:focus .programs__icon-link {
+    display: none;
+  }
+
+  &:hover .programs__icon-link--hover,
+  &:focus .programs__icon-link--hover {
     position: absolute;
-    content: "";
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 12px;
-    top: 6px;
-    left: 96px;
+    display: block;
+    left: 100px;
   }
 
   &:active {
     color: $color-light-grey;
+  }
+}
+
+.programs__icon-link {
+  margin-left: 10px;
+
+  &--hover {
+    display: none;
   }
 }
 
@@ -235,9 +245,9 @@
   .programs__link {
     font-size: 20px;
 
-    &::after {
-      top: 7px;
-      left: 128px;
+    &:hover .programs__icon-link--hover,
+    &:focus .programs__icon-link--hover {
+      left: 115px;
     }
   }
 }
