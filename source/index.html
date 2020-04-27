@@ -6,8 +6,6 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<script src="js/app.js"></script>
-<script src="js/picturefill.js"></script>
 <body>
 <div style="display: none;">
   <include src="source/img/sprite.svg"></include>
@@ -50,10 +48,13 @@
       <h2 class="programs__title">Функциональное питание для котов</h2>
       <p class="programs__slogan">Занялся собой? Займись котом!</p>
       <picture>
+        <source type="image/webp" media="(min-width: 1220px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+
         <source media="(min-width: 1220px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-        <img class="programs__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
-             width="280" height="271" alt="Питание кота">
+        <img class="programs__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Питание кота">
       </picture>
       <a class="programs__select button" href="form.html">Подобрать программу</a>
     </div>
@@ -62,13 +63,27 @@
         <h3 class="programs__name programs__name--slim">Похудение</h3>
         <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="programs__link" href="#">Каталог Slim</a>
+        <a class="programs__link" href="#">Каталог Slim
+          <svg class="programs__icon-link" width="25" height="12">
+            <use xlink:href="#icon-right-arrow-long"></use>
+          </svg>
+          <svg class="programs__icon-link--hover" width="34" height="12">
+            <use xlink:href="#icon-right-arrow-verylong"></use>
+          </svg>
+        </a>
       </li>
       <li class="programs__item programs__item--pro">
         <h3 class="programs__name programs__name--pro">Набор массы</h3>
         <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="programs__link" href="#">Каталог Pro</a>
+        <a class="programs__link" href="#">Каталог Pro
+          <svg class="programs__icon-link" width="25" height="12">
+            <use xlink:href="#icon-right-arrow-long"></use>
+          </svg>
+          <svg class="programs__icon-link--hover" width="34" height="12">
+            <use xlink:href="#icon-right-arrow-verylong"></use>
+          </svg>
+        </a>
       </li>
     </ul>
   </section>
@@ -116,22 +131,27 @@
         <div class="example__cat">
           <div>
             <picture>
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
               <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="example__cat-image example__cat-image--before" src="img/before-mobile@1x.png"
-                   srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до программы">
+              <img class="example__cat-image example__cat-image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до программы">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
               <source media="(min-width: 1220px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="example__cat-image example__cat-image--after" src="img/after-mobile@1x.png"
-                   srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после программы">
+              <img class="example__cat-image example__cat-image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после программы">
             </picture>
           </div>
           <div class="example__before-after comparison">
             <label class="comparison__item" for="slider">Было</label>
-            <input class="comparison__range" type="range" min="0" max="100" value="50" id="slider"
-                   oninput="moveDivisor()">
+            <input class="comparison__range" type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
             <label class="comparison__item" for="slider">Стало</label>
           </div>
         </div>
@@ -196,5 +216,7 @@
     </div>
   </div>
 </footer>
+<script src="js/app.js"></script>
+<script src="js/picturefill.js"></script>
 </body>
 </html>

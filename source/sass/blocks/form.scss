@@ -137,7 +137,7 @@
 }
 
 .form__tick-item:active input ~ .form__tick-mark,
-.form__checkbox-item:focus input ~ .form__checkbox-mark {
+.form__checkbox-item:active input ~ .form__checkbox-mark {
   border: $border-input-hvr;
   opacity: 0.3;
 }
@@ -183,6 +183,22 @@
   min-height: 45px;
   padding-left: 14px;
   border: $border-input;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border: $border-input-form-hvr;
+  }
+
+  &:active,
+  &:focus-within {
+    border: $border-input-form-active;
+  }
+
+  &.error {
+    border: $border-input-form-error;
+    outline: none;
+  }
 }
 
 .form__radio input {

@@ -21,6 +21,11 @@
     height: 60px;
     top: -4px;
     left: -80px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: contain;
+      background-position: 0 0;
+    }
   }
 
   &--leaf::before {
@@ -85,6 +90,10 @@
       height: 80px;
       top: -112px;
       left: 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-position: 0 0;
+      }
     }
 
 

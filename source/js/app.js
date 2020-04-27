@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
   const navMain = document.querySelector('.page-header__nav');
   const navToggle = document.querySelector('.page-header__toggle');
+//Get all the inputs...
+  const inputs = document.querySelectorAll('input, select, textarea');
 
   navToggle.classList.remove('page-header__toggle--nojs');
   navMain.classList.remove('page-header__nav--nojs');
@@ -17,5 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
       navToggle.classList.remove('page-header__toggle--open');
       navToggle.classList.add('page-header__toggle--close')
     }
-  })
-});
+  });
+
+  // Loop through them...
+  for(let input of inputs) {
+    // Just before submit, the invalid event will fire, let's apply our class there.
+    input.addEventListener('invalid', (event) => {
+      input.classList.add('error');
+    }, false);
+}});
