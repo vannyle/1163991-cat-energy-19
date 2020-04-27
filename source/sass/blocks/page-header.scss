@@ -174,8 +174,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header,
-  .programs {
+  .page-header {
     max-width: $desktop-width;
     min-height: 167px;
     margin: 0 auto;
