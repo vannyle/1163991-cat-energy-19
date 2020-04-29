@@ -23,8 +23,8 @@
     left: -80px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-size: contain;
-      background-position: 0 0;
+      background-position: 5px 5px;
+      background-size: 50px 50px;
     }
   }
 
@@ -92,7 +92,7 @@
       left: 0;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-position: 0 0;
+        background-position: 15px 15px;
       }
     }
 

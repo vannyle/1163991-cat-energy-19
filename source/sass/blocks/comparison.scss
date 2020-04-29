@@ -1,12 +1,40 @@
+.comparison__range {
+  appearance: none;
+  width: 27%;
+  height: 15px;
+  margin: 0 18px;
+  padding: 0 5px;
+  align-self: center;
+  border: $border-input-form-hvr;
+  border-radius: 7px;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 48%;
+    height: 7px;
+    border-radius: 3px;
+    background-color: $color-green;
+    cursor: pointer;
+  }
+
+}
+
 @media (min-width: $tablet-width) {
   .comparison__item {
     border-bottom: 1px dotted #bebebe;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
   }
 
   .comparison__range {
     appearance: none;
     width: 75%;
     height: 6px;
+    padding: 0;
     background: $range-color;
     border-radius: 2.5px;
 
@@ -22,11 +50,11 @@
     }
 
     &::-moz-range-thumb {
-      width: 34px;
-      height: 34px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       background: $color-green;
-      border: 13px solid #ffffff;
+      border: 10px solid #ffffff;
       box-shadow: 0 2px 5px 3px #cdcdcd;
       cursor: pointer;
     }
