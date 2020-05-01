@@ -12,6 +12,17 @@
 
   & textarea {
     border: $border-input;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border: $border-input-form-hvr;
+    }
+
+    &:active,
+    &:focus-within {
+      border: $border-input-form-active;
+    }
   }
 }
 
@@ -195,9 +206,18 @@
     border: $border-input-form-active;
   }
 
+  &:active + .form__owner-item,
+  &:focus-within + .form__owner-item {
+    color: $color-green;
+  }
+
   &.error {
     border: $border-input-form-error;
     outline: none;
+  }
+
+  &.error + .form__owner-item {
+    color: $error-color;
   }
 }
 
