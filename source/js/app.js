@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  sliderMobile.addEventListener('click', function (ev) {
-    if (ev.target.checked === true) {
+  sliderMobile.addEventListener('click', function (e) {
+    if (e.target.checked === true) {
       catMobile.classList.add('example__cat--mobile-after');
       catMobile.classList.remove('example__cat--mobile-before')
     } else {
@@ -62,5 +62,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-

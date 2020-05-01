@@ -4,34 +4,13 @@
 
 .comparison__range {
   display: none;
-
-  //&--mobile {
-  //  appearance: none;
-  //  width: 27%;
-  //  height: 15px;
-  //  margin: 0 18px;
-  //  padding: 0 5px;
-  //  align-self: center;
-  //  border: $border-input-form-hvr;
-  //  border-radius: 7px;
-  //  outline: none;
-  //
-  //  &::-webkit-slider-thumb {
-  //    appearance: none;
-  //    width: 48%;
-  //    height: 7px;
-  //    border-radius: 3px;
-  //    background-color: $color-green;
-  //    cursor: pointer;
-  //  }
-  //}
 }
 
 .comparison__checkbox {
   position: relative;
   align-self: center;
 
-  &--mobile{
+  &--mobile {
     display: none;
   }
 }
@@ -75,12 +54,14 @@
   }
 }
 
-.comparison__checkbox--mobile:checked + .comparison__item--mobile::before {
-  background-color: $color-white;
-}
+.comparison__checkbox--mobile:checked {
+  & + .comparison__item--mobile::before {
+    background-color: $color-white;
+  }
 
-.comparison__checkbox--mobile:checked + .comparison__item--mobile::after {
-  left: 53%;
+  & + .comparison__item--mobile::after {
+    left: 53%;
+  }
 }
 
 
@@ -114,24 +95,69 @@
     }
 
     &::-webkit-slider-thumb {
+      position: relative;
       appearance: none;
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      background: $color-green;
-      border: 13px solid #ffffff;
-      box-shadow: 0 2px 5px 3px #cdcdcd;
+      background: rgb(104, 183, 56) radial-gradient(circle, rgba(104, 183, 56, 1) 20%, rgba(255, 255, 255, 1) 20%);
+      border: $border-input-form-hvr;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
       cursor: pointer;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      &:active {
+        border: 1px solid $color-green;
+      }
     }
 
     &::-moz-range-thumb {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgb(104, 183, 56) radial-gradient(circle, rgba(104, 183, 56, 1) 20%, rgba(255, 255, 255, 1) 20%);
+      border: $border-input-form-hvr;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      &:active {
+        border: 1px solid $color-green;
+      }
+    }
+
+    &::-ms-track {
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: transparent;
+      border-width: 6px 0;
+    }
+
+    &::-ms-fill-lower,
+    &::-ms-fill-upper {
+      background: transparent;
+    }
+
+    &::-ms-thumb {
       width: 10px;
       height: 10px;
       border-radius: 50%;
       background: $color-green;
       border: 10px solid #ffffff;
-      box-shadow: 0 2px 5px 3px #cdcdcd;
       cursor: pointer;
+    }
+
+    &::-ms-tooltip {
+      display: none;
     }
   }
 
