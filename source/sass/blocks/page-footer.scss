@@ -15,7 +15,7 @@
 
 .page-footer__logo {
   padding-top: 40px;
-  padding-bottom: 27px;
+  padding-bottom: 29px;
 }
 
 .page-footer__logo-img {
@@ -38,7 +38,7 @@
 .page-footer__social {
   padding-top: 22px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
@@ -64,6 +64,6 @@
 
   .page-footer__copyright {
     margin-left: -11px;
-    padding-top: 14px;
+    padding-top: 10px;
   }
 }

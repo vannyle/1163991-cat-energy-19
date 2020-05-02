@@ -85,6 +85,10 @@
   text-align: center;
   line-height: 1.25;
 
+  & span {
+    display: inline-block;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -124,7 +128,7 @@
 
   .others__item-wrapper {
     margin-top: 21px;
-    margin-bottom: 7px;
+    margin-bottom: 11px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -132,7 +136,7 @@
 
   .others__name {
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
   }
 
   .others__price {
@@ -151,7 +155,7 @@
   }
 
   .others__slogan {
-    padding: 72px 125px 68px 424px;
+    padding: 72px 120px 68px 424px;
     text-align: left;
 
     &::before {

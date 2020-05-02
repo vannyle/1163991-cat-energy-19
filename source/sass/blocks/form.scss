@@ -232,13 +232,18 @@
   padding: 35px 0;
 }
 
+.form__additional-info {
+  min-height: 221px;
+  padding: 29px 0 35px;
+}
+
 .form__pet-info {
   padding: 28px 0 24px;
 }
 
 .form__owner-info {
   min-height: 142px;
-  padding: 25px 0 5px;
+  padding: 25px 0 0;
 }
 
 .form__owner-info label {
@@ -247,6 +252,7 @@
 
 .form__owner-items {
   position: relative;
+  margin-bottom: 3px;
 }
 
 .form__owner-item {
@@ -267,7 +273,7 @@
 }
 
 .form__comment-title {
-  padding-bottom: 33px;
+  padding-bottom: 35px;
 }
 
 .form__comment textarea {
@@ -292,18 +298,26 @@
     margin-right: 19px;
   }
 
+  .form__pet-info,
+  .form__radio,
+  .form__owner,
+  .form__comment {
+    margin-right: 26px;
+  }
+
   .form__info input {
     min-height: 52px;
-    padding-left: 18px;
+    padding-left: 20px;
   }
 
   .form__field {
     margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .form__radio {
-    padding: 27px 28px 0;
-    margin-bottom: 53px;
+    padding: 28px 28px 5px;
+    margin-bottom: 50px;
     border: $border-input;
   }
 
@@ -346,7 +360,11 @@
   }
 
   .form__owner-info {
-    padding: 55px 0 39px;
+    padding: 52px 0 39px;
+  }
+
+  .form__owner-phone {
+    margin-right: 15px;
   }
 
   .form__pet-info,

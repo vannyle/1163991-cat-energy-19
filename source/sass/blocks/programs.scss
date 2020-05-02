@@ -175,7 +175,7 @@
   .programs__select {
     min-width: 245px;
     margin-top: 17px;
-    padding: 14px 27px;
+    padding: 13px 28px;
     font-size: 20px;
   }
 
@@ -197,7 +197,7 @@
     min-height: 372px;
     margin-top: 31px;
     margin-bottom: 0;
-    padding: 50px 52px 56px;
+    padding: 50px 52px 57px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -215,7 +215,7 @@
     &::after {
       width: 200px;
       height: 200px;
-      top: 89px;
+      top: 91px;
       left: auto;
       right: 62px;
     }
@@ -246,12 +246,19 @@
   }
 
   .programs__link {
-    font-size: 20px;
+    &:link,
+    &:visited {
+      font-size: 20px;
+    }
 
     &:hover .programs__icon-link--hover,
     &:focus .programs__icon-link--hover {
       left: 115px;
     }
+  }
+
+  .programs__icon-link {
+    margin-left: 24px;
   }
 }
 

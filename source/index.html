@@ -71,7 +71,7 @@
           <svg class="programs__icon-link" width="25" height="12">
             <use xlink:href="#icon-right-arrow-long"></use>
           </svg>
-          <svg class="programs__icon-link--hover" width="34" height="12">
+          <svg class="programs__icon-link programs__icon-link--hover" width="34" height="12">
             <use xlink:href="#icon-right-arrow-verylong"></use>
           </svg>
         </a>
@@ -104,8 +104,8 @@
         <li class="advantages__item advantages__item--dining">Замените один-два приема обычной еды на наше
           функциональное питание.
         </li>
-        <li class="advantages__item advantages__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего
-          питомца!
+        <li class="advantages__item advantages__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего
+          питомца!</span>
         </li>
       </ul>
     </div>
@@ -133,7 +133,7 @@
           </div>
         </div>
         <div class="example__cat">
-          <div class="example__cat--mobile example__cat--mobile-before">
+          <div class="example__cat-mobile example__cat-mobile--before">
             <picture>
               <source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
@@ -153,32 +153,37 @@
               <img id="cat-after" class="example__cat-image example__cat-image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после программы">
             </picture>
           </div>
-          <div class="example__before-after comparison">
-            <label class="comparison__item" id="before-btn" for="slider">Было</label>
-            <input class="comparison__range" type="range" min="0" max="100" value="50" step="any" id="slider">
-            <div class="comparison__checkbox">
-              <input class="comparison__checkbox--mobile" type="checkbox" id="slider-mobile">
-              <label class="comparison__item--mobile" for="slider-mobile">Switch</label>
-            </div>
-            <label class="comparison__item" id="after-btn" for="slider">Стало</label>
+          <div class="example__before-after comparing">
+            <div class="comparing__item">Было</div>
+            <div class="comparing__item comparing__range"></div>
+            <div class="comparing__item">Стало</div>
+<!--            <label class="comparison__item" id="before-btn" for="slider">Было</label>-->
+<!--            <input class="comparison__range" type="range" min="0" max="100" value="50" step="any" id="slider">-->
+<!--            <div class="comparison__checkbox">-->
+<!--              <input class="comparison__checkbox&#45;&#45;mobile" type="checkbox" id="slider-mobile">-->
+<!--              <label class="comparison__item&#45;&#45;mobile" for="slider-mobile">Switch</label>-->
+<!--            </div>-->
+<!--            <label class="comparison__item" id="after-btn" for="slider">Стало</label>-->
           </div>
         </div>
       </div>
     </div>
   </section>
   <section class="address">
-    <div class="address__header row">
-      <h2 class="address__item address__title">приглашаем к сотрудничеству дилеров!</h2>
-      <div class="address__item address__info">
-        <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-        <p>Санкт-Петербург</p>
+    <div class="address__wrapper">
+      <div class="address__header row">
+        <h2 class="address__item address__title">приглашаем <span>к сотрудничеству дилеров!</span></h2>
+        <div class="address__item address__info">
+          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p>Санкт-Петербург</p>
+        </div>
       </div>
-    </div>
-    <div class="address__map">
-      <iframe class="address__map-item"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1585834926363!5m2!1sru!2slt"
-              width="600" height="450" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-      </iframe>
+      <div class="address__map">
+        <iframe class="address__map-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1585834926363!5m2!1sru!2slt"
+                width="600" height="450" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
     </div>
   </section>
 </main>
@@ -191,7 +196,7 @@
       <li class="social__item social__item--vkontakte">
         <a class="social__link" href="#">
           <span class="visually-hidden">Вконтакте</span>
-          <svg width="30" height="16">
+          <svg width="22" height="12">
             <use xlink:href="#icon-vk"></use>
           </svg>
         </a>
@@ -199,7 +204,7 @@
       <li class="social__item social__item--instagram">
         <a class="social__link" href="#">
           <span class="visually-hidden">Инстаграм</span>
-          <svg width="23" height="23">
+          <svg width="16" height="16">
             <use xlink:href="#icon-insta"></use>
           </svg>
         </a>
@@ -207,7 +212,7 @@
       <li class="social__item social__item--facebook">
         <a class="social__link" href="#">
           <span class="visually-hidden">Фейсбук</span>
-          <svg width="14" height="28">
+          <svg width="10" height="19">
             <use xlink:href="#icon-fb"></use>
           </svg>
         </a>
