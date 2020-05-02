@@ -131,7 +131,9 @@
   &:focus .programs__icon-link--hover {
     position: absolute;
     display: block;
+    top: 50%;
     left: 100px;
+    transform: translateY(-50%);
   }
 
   &:active {
