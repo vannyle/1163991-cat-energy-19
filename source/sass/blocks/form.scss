@@ -257,18 +257,20 @@
 
 .form__owner-item {
   position: absolute;
-  top: 15px;
-  right: 15px;
   fill: $color-dark;
 
   &--email {
     width: 18px;
     height: 14px;
+    top: 16px;
+    right: 16px;
   }
 
   &--phone {
     width: 21px;
     height: 21px;
+    top: 12px;
+    right: 12px;
   }
 }
 
@@ -295,7 +297,7 @@
   }
 
   .form__item label {
-    margin-right: 19px;
+    margin-right: 16px;
   }
 
   .form__pet-info,
@@ -363,8 +365,16 @@
     padding: 52px 0 39px;
   }
 
-  .form__owner-phone {
-    margin-right: 15px;
+  .form__owner-item {
+    &--email {
+      top: 19px;
+      right: 19px;
+    }
+
+    &--phone {
+      top: 16px;
+      right: 16px;
+    }
   }
 
   .form__pet-info,
@@ -373,7 +383,7 @@
   }
 
   .form__comment {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   .form__comment textarea {
@@ -418,6 +428,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__comment,
+  .form__owner,
+  .form__pet-info,
+  .form__radio {
+    margin: 0 auto;
+  }
+
   .form__pet {
     max-width: $desktop-width;
     margin: 0 auto;
@@ -449,8 +466,8 @@
     }
 
     &::before {
-      width: 160px;
-      left: -200px;
+      width: 300px;
+      left: -340px;
     }
   }
 
@@ -470,7 +487,7 @@
   }
 
   .form__comment {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   .form__comment textarea {
