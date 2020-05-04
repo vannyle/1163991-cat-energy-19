@@ -3,11 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const navToggle = document.querySelector('.page-header__toggle');
 //Get all the inputs...
   const inputs = document.querySelectorAll('input, select, textarea');
-  const slider = document.getElementById('slider');
-  const beforeBtn = document.getElementById('before-btn');
-  const afterBtn = document.getElementById('after-btn');
-  const catMobile = document.querySelector('.example__cat--mobile');
-  const sliderMobile = document.getElementById('slider-mobile');
 
   navToggle.classList.remove('page-header__toggle--nojs');
   navMain.classList.remove('page-header__nav--nojs');
@@ -33,32 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
       input.classList.add('error');
     }, false);
   }
-
-  slider.addEventListener('input', function (e) {
-    const perc = e.target.value / 100;
-    document.getElementById('cat-before').style.clip = `rect(0, ${680 - 680 * perc}px, 517px, 0)`;
-    document.getElementById('cat-after').style.clip = `rect(0, 680px, 517px, ${680 - 680 * perc}px)`;
-
-    beforeBtn.addEventListener('click', function () {
-      document.getElementById('cat-before').style.clip = `rect(0, 680px, 517px, 0)`;
-      document.getElementById('cat-after').style.clip = `rect(0, 0, 517px, 0)`;
-      e.target.value = 0;
-    });
-
-    afterBtn.addEventListener('click', function () {
-      document.getElementById('cat-before').style.clip = `rect(0, 0, 517px, 0)`;
-      document.getElementById('cat-after').style.clip = `rect(0, 680px, 517px, 0)`;
-      e.target.value = 100;
-    });
-  });
-
-  sliderMobile.addEventListener('click', function (e) {
-    if (e.target.checked === true) {
-      catMobile.classList.add('example__cat--mobile-after');
-      catMobile.classList.remove('example__cat--mobile-before')
-    } else {
-      catMobile.classList.remove('example__cat--mobile-after');
-      catMobile.classList.add('example__cat--mobile-before')
-    }
-  });
 });

@@ -11,6 +11,10 @@
 .page-footer__item {
   padding: 20px 0;
   border-bottom: 1px solid #d9d9d9;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .page-footer__logo {
@@ -33,6 +37,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 14px;
 }
 
 .page-footer__social {

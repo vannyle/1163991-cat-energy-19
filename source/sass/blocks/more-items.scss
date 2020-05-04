@@ -43,6 +43,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .more-items__to-all {
+    padding-top: 165px;
+  }
+
   .more-items {
     background-color: $color-white;
     border: 1px solid rgba(205, 205, 205, 0.5);
@@ -56,7 +60,7 @@
       background-image: url("../img/icon-plus.svg");
       width: 61px;
       height: 61px;
-      top: -102px;
+      top: -111px;
     }
   }
 
@@ -73,6 +77,10 @@
 @media (min-width: $desktop-width) {
   .more-items__title {
     margin: 0;
+
+    &::before {
+      top: -112px;
+    }
   }
 
   .more-items__slogan {
