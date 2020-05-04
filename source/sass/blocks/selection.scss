@@ -29,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .selection {
-    padding-bottom: 74px;
+    padding-bottom: 71px;
     font-size: 20px;
   }
 
@@ -79,8 +79,13 @@
     margin: 0;
   }
 
+  .selection__form {
+    margin: 0 auto;
+    width: 1220px;
+  }
+
   .selection__submit {
-    padding-top: 9px;
+    padding-top: 8px;
     padding-bottom: 9px;
   }
 

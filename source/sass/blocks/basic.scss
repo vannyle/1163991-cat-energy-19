@@ -18,6 +18,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
 
 html,
@@ -48,6 +53,10 @@ h2 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .row {

@@ -14,12 +14,12 @@
   <div class="page-header__container">
     <a class="page-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
       </picture>
     </a>
-    <button class="page-header__toggle page-header__toggle--close page-header__toggle--nojs">
+    <button class="page-header__toggle page-header__toggle--close page-header__toggle--nojs" aria-label="Меню">
       <span></span>
       <span></span>
       <span></span>
@@ -94,7 +94,7 @@
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
         <ul class="form__info form__owner-info">
           <li class="form__field form__owner-items">
-            <label for="email">E-mail:*</label>
+            <label class="form__owner-email" for="email">E-mail:*</label>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
             <svg class="form__owner-item form__owner-item--email" width="18" height="14">
               <use xlink:href="#icon-mail"></use>
@@ -215,7 +215,7 @@
     </div>
   </div>
 </footer>
-<script src="js/app.js"></script>
 <script src="js/picturefill.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

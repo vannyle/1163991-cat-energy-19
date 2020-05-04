@@ -204,6 +204,7 @@
   &:active,
   &:focus-within {
     border: $border-input-form-active;
+    padding-left: 19px;
   }
 
   &:active + .form__owner-item,
@@ -282,6 +283,11 @@
   padding: 9px 10px 0 14px;
   min-height: 150px;
   width: 100%;
+
+  &:active,
+  &:focus-within {
+    padding-left: 13px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -362,7 +368,7 @@
   }
 
   .form__owner-info {
-    padding: 52px 0 39px;
+    padding: 49px 0 39px;
   }
 
   .form__owner-item {
@@ -379,7 +385,7 @@
 
   .form__pet-info,
   .form__additional-info {
-    min-height: 217px;
+    min-height: 220px;
   }
 
   .form__comment {
@@ -390,10 +396,15 @@
     min-height: 174px;
     padding-left: 17px;
     margin-top: 44px;
+
+    &:active,
+    &:focus-within {
+      padding-left: 16px;
+    }
   }
 
   .form__checkbox {
-    padding: 40px 0;
+    padding: 39px 0;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -495,7 +506,7 @@
   }
 
   .form__additional-info {
-    min-height: 143px;
+    min-height: 147px;
   }
 
   .form__box {
