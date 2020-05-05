@@ -1,20 +1,29 @@
 .programs {
+  position: relative;
   padding-bottom: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color-green;
+    background-size: cover;
+    top: 0;
+    width: 320px;
+    height: 305px;
+    z-index: -1;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
 }
 
 .programs__header {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $color-green;
-  background-size: cover;
-  height: 305px;
+  min-height: 305px;
   text-align: center;
   color: $color-white;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-  }
 }
 
 .programs__title {
@@ -44,7 +53,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 196px 20px 0;
+  margin: 22px 20px 0;
   list-style: none;
 }
 
@@ -152,14 +161,16 @@
 @media (min-width: $tablet-width) {
   .programs {
     position: relative;
+
+    &::before {
+      display: none;
+    }
   }
 
   .programs__header {
-    background-image: none;
-    background-color: transparent;
     margin-left: 118px;
     text-align: left;
-    margin-bottom: 500px;
+    margin-bottom: 499px;
     color: $color-black;
   }
 
@@ -189,7 +200,7 @@
   }
 
   .programs__list {
-    margin: 196px 30px 0;
+    margin: 0 30px;
   }
 
   .programs__item {
@@ -270,13 +281,11 @@
     margin: 0 auto;
     padding: 0 40px;
 
-
     &::before {
       position: absolute;
       content: "";
+      display: block;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      background-color: $color-green;
-      background-size: cover;
       width: 720px;
       height: 696px;
       top: -197px;
@@ -310,7 +319,7 @@
   }
 
   .programs__list {
-    margin: 210px 0 0;
+    margin: 204px 0 0;
     justify-content: space-between;
   }
 
