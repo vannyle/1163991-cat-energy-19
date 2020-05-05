@@ -10,6 +10,22 @@
     font-size: 16px;
   }
 
+
+  & input:-ms-input-placeholder,
+  & textarea:-ms-input-placeholder {
+    font-family: $font-family-title;
+  }
+
+  & input:-ms-input-placeholder,
+  & textarea:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+
+  & input:-ms-input-placeholder,
+  & textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
   & textarea {
     border: $border-input;
     outline: none;
@@ -369,6 +385,16 @@
 
   .form__owner-info {
     padding: 49px 0 39px;
+  }
+
+  .form__owner-items {
+    & .form__owner-email {
+      margin-right: 20px;
+    }
+
+    & .form__owner-phone {
+      margin-right: 13px;
+    }
   }
 
   .form__owner-item {

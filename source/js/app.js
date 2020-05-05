@@ -28,4 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
       input.classList.add('error');
     }, false);
   }
+
+  window.initMap = function () {
+    const address = {lat: 59.938851, lng: 30.323058};
+    const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 18,
+      center: address
+    });
+
+    const mapPin = {
+      url: 'img/map-pin.png',
+      size: new google.maps.Size(124, 106),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(30, 30),
+      scaledSize: new google.maps.Size(80, 70)
+    };
+
+    const marker = new google.maps.Marker({
+      position: address,
+      map: map,
+      icon: mapPin
+    });
+  }
 });

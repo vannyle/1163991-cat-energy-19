@@ -204,9 +204,10 @@
     max-width: $desktop-width;
     min-height: 462px;
     margin: 0 auto;
+    padding: 0 40px;
     display: flex;
     align-items: center;
-    background: rgb(242, 242, 242) linear-gradient(90deg, rgba(242, 242, 242, 1) 76.7%, rgba(234, 234, 234, 1) 76.7%);
+    background: rgb(242, 242, 242) linear-gradient(90deg, rgba(242, 242, 242, 1) 75.2%, rgba(234, 234, 234, 1) 75.2%);
   }
 
   .example__wrapper {

@@ -150,7 +150,7 @@
   .products {
     max-width: $desktop-width;
     margin: 0 auto;
-    padding-bottom: 3px;
+    padding: 0 40px 3px;
   }
 
   .products__title {
@@ -163,6 +163,10 @@
     flex-basis: 245px;
     margin-top: 122px;
     margin-bottom: 19px;
+  }
+
+  .products__item {
+    padding-top: 165px;
   }
 
   .products__details {

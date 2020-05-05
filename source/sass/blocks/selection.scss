@@ -70,6 +70,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .selection {
+    padding-bottom: 75px;
+  }
+
   .selection__title {
     padding: 6px 0 42px;
   }
