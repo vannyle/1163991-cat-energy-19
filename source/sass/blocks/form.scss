@@ -128,11 +128,10 @@
 .form__checkbox-item {
   position: relative;
   padding-left: 46px;
+  min-height: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
-
-  min-height: 30px;
 }
 
 .form__tick-item input,
@@ -164,7 +163,9 @@
 }
 
 .form__tick-item:active input ~ .form__tick-mark,
-.form__checkbox-item:active input ~ .form__checkbox-mark {
+.form__tick-item:disabled input ~ .form__tick-mark,
+.form__checkbox-item:active input ~ .form__checkbox-mark,
+.form__checkbox-item:disabled input ~ .form__checkbox-mark {
   border: $border-input-hvr;
   opacity: 0.3;
 }
@@ -179,6 +180,11 @@
 .form__tick-item input:checked ~ .form__tick-mark::after,
 .form__checkbox-item input:checked ~ .form__checkbox-mark::after {
   display: block;
+}
+
+.form__tick-item input:disabled ~ .form__tick-mark::after,
+.form__checkbox-item input:disabled ~ .form__checkbox-mark::after {
+  opacity: 0.5;
 }
 
 .form__tick-item .form__tick-mark::after {
