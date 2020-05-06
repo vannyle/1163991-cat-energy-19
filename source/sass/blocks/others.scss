@@ -1,5 +1,5 @@
 .others {
-  padding-bottom: 37px;
+  padding-bottom: 36px;
 }
 
 .others__title {
@@ -85,6 +85,10 @@
   text-align: center;
   line-height: 1.25;
 
+  & span {
+    display: inline-block;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -98,7 +102,7 @@
 
 @media (min-width: $tablet-width) {
   .others {
-    padding-bottom: 78px;
+    padding-bottom: 75px;
   }
 
   .others__title {
@@ -117,14 +121,14 @@
 
   .others__item {
     padding: 0 37px;
-    min-height: 140px;
+    min-height: 139px;
     justify-content: flex-start;
     border: $border-line;
   }
 
   .others__item-wrapper {
     margin-top: 21px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -132,7 +136,7 @@
 
   .others__name {
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
   }
 
   .others__price {
@@ -143,7 +147,7 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 100%;
     min-height: 200px;
-    margin-top: 66px;
+    margin-top: 69px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -151,7 +155,7 @@
   }
 
   .others__slogan {
-    padding: 72px 125px 68px 424px;
+    padding: 72px 120px 68px 424px;
     text-align: left;
 
     &::before {
@@ -174,8 +178,8 @@
     }
 
     &::before {
-      width: 160px;
-      left: -200px;
+      width: 800px;
+      left: -840px;
     }
   }
 
@@ -204,6 +208,16 @@
 
   .others__details {
     min-width: 288px;
+    display: block;
+  }
+
+  .others__value {
+    display: table-cell;
+    width: 244px;
+  }
+
+  .others__price {
+    display: table-cell;
   }
 
   .others__list {

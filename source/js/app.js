@@ -3,11 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const navToggle = document.querySelector('.page-header__toggle');
 //Get all the inputs...
   const inputs = document.querySelectorAll('input, select, textarea');
-  const slider = document.getElementById('slider');
-  const beforeBtn = document.getElementById('before-btn');
-  const afterBtn = document.getElementById('after-btn');
-  const catMobile = document.querySelector('.example__cat--mobile');
-  const sliderMobile = document.getElementById('slider-mobile');
 
   navToggle.classList.remove('page-header__toggle--nojs');
   navMain.classList.remove('page-header__nav--nojs');
@@ -34,33 +29,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }, false);
   }
 
-  slider.addEventListener('input', function (e) {
-    const perc = e.target.value / 100;
-    document.getElementById('cat-before').style.clip = `rect(0, ${680 - 680 * perc}px, 517px, 0)`;
-    document.getElementById('cat-after').style.clip = `rect(0, 680px, 517px, ${680 - 680 * perc}px)`;
-
-    beforeBtn.addEventListener('click', function () {
-      document.getElementById('cat-before').style.clip = `rect(0, 680px, 517px, 0)`;
-      document.getElementById('cat-after').style.clip = `rect(0, 0, 517px, 0)`;
-      e.target.value = 0;
+  window.initMap = function () {
+    const address = {lat: 59.938851, lng: 30.323058};
+    const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 18,
+      center: address
     });
 
-    afterBtn.addEventListener('click', function () {
-      document.getElementById('cat-before').style.clip = `rect(0, 0, 517px, 0)`;
-      document.getElementById('cat-after').style.clip = `rect(0, 680px, 517px, 0)`;
-      e.target.value = 100;
-    });
-  });
+    const mapPin = {
+      url: 'img/map-pin.png',
+      size: new google.maps.Size(124, 106),
+      origin: new google.maps.Point(0, 0)
+    };
 
-  sliderMobile.addEventListener('click', function (ev) {
-    if (ev.target.checked === true) {
-      catMobile.classList.add('example__cat--mobile-after');
-      catMobile.classList.remove('example__cat--mobile-before')
-    } else {
-      catMobile.classList.remove('example__cat--mobile-after');
-      catMobile.classList.add('example__cat--mobile-before')
-    }
-  });
+    const marker = new google.maps.Marker({
+      position: address,
+      map: map,
+      icon: mapPin
+    });
+  }
 });
-
-

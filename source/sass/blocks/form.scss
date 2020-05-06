@@ -10,6 +10,12 @@
     font-size: 16px;
   }
 
+  & input:-ms-input-placeholder,
+  & textarea:-ms-input-placeholder {
+    font-family: $font-family-title;
+    text-transform: uppercase;
+  }
+
   & textarea {
     border: $border-input;
     outline: none;
@@ -52,7 +58,7 @@
   display: inline-flex;
   background-color: #ffffff;
   font-size: 24px;
-  padding-top: 25px;
+  padding-top: 27px;
   line-height: 1;
   padding-right: 22px;
 
@@ -112,11 +118,10 @@
 .form__checkbox-item {
   position: relative;
   padding-left: 46px;
+  min-height: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
-
-  min-height: 30px;
 }
 
 .form__tick-item input,
@@ -148,7 +153,9 @@
 }
 
 .form__tick-item:active input ~ .form__tick-mark,
-.form__checkbox-item:active input ~ .form__checkbox-mark {
+.form__tick-item:disabled input ~ .form__tick-mark,
+.form__checkbox-item:active input ~ .form__checkbox-mark,
+.form__checkbox-item:disabled input ~ .form__checkbox-mark {
   border: $border-input-hvr;
   opacity: 0.3;
 }
@@ -163,6 +170,11 @@
 .form__tick-item input:checked ~ .form__tick-mark::after,
 .form__checkbox-item input:checked ~ .form__checkbox-mark::after {
   display: block;
+}
+
+.form__tick-item input:disabled ~ .form__tick-mark::after,
+.form__checkbox-item input:disabled ~ .form__checkbox-mark::after {
+  opacity: 0.5;
 }
 
 .form__tick-item .form__tick-mark::after {
@@ -204,6 +216,7 @@
   &:active,
   &:focus-within {
     border: $border-input-form-active;
+    padding-left: 19px;
   }
 
   &:active + .form__owner-item,
@@ -232,13 +245,18 @@
   padding: 35px 0;
 }
 
+.form__additional-info {
+  min-height: 221px;
+  padding: 29px 0 35px;
+}
+
 .form__pet-info {
   padding: 28px 0 24px;
 }
 
 .form__owner-info {
   min-height: 142px;
-  padding: 25px 0 5px;
+  padding: 25px 0 0;
 }
 
 .form__owner-info label {
@@ -247,33 +265,41 @@
 
 .form__owner-items {
   position: relative;
+  margin-bottom: 3px;
 }
 
 .form__owner-item {
   position: absolute;
-  top: 15px;
-  right: 15px;
   fill: $color-dark;
 
   &--email {
     width: 18px;
     height: 14px;
+    top: 16px;
+    right: 16px;
   }
 
   &--phone {
     width: 21px;
     height: 21px;
+    top: 12px;
+    right: 12px;
   }
 }
 
 .form__comment-title {
-  padding-bottom: 33px;
+  padding-bottom: 31px;
 }
 
 .form__comment textarea {
   padding: 9px 10px 0 14px;
   min-height: 150px;
   width: 100%;
+
+  &:active,
+  &:focus-within {
+    padding-left: 13px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -289,21 +315,29 @@
   }
 
   .form__item label {
-    margin-right: 19px;
+    margin-right: 16px;
+  }
+
+  .form__pet-info,
+  .form__radio,
+  .form__owner,
+  .form__comment {
+    margin-right: 26px;
   }
 
   .form__info input {
     min-height: 52px;
-    padding-left: 18px;
+    padding-left: 20px;
   }
 
   .form__field {
     margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .form__radio {
-    padding: 27px 28px 0;
-    margin-bottom: 53px;
+    padding: 28px 28px 5px;
+    margin-bottom: 50px;
     border: $border-input;
   }
 
@@ -346,26 +380,53 @@
   }
 
   .form__owner-info {
-    padding: 55px 0 39px;
+    padding: 49px 0 39px;
+  }
+
+  .form__owner-items {
+    & .form__owner-email {
+      margin-right: 20px;
+    }
+
+    & .form__owner-phone {
+      margin-right: 13px;
+    }
+  }
+
+  .form__owner-item {
+    &--email {
+      top: 19px;
+      right: 19px;
+    }
+
+    &--phone {
+      top: 16px;
+      right: 16px;
+    }
   }
 
   .form__pet-info,
   .form__additional-info {
-    min-height: 217px;
+    min-height: 220px;
   }
 
   .form__comment {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   .form__comment textarea {
     min-height: 174px;
     padding-left: 17px;
     margin-top: 44px;
+
+    &:active,
+    &:focus-within {
+      padding-left: 16px;
+    }
   }
 
   .form__checkbox {
-    padding: 40px 0;
+    padding: 39px 0;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -400,6 +461,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__item {
+    & input:-ms-input-placeholder,
+    & textarea:-ms-input-placeholder {
+      font-size: 20px;
+    }
+  }
+
+  .form__comment,
+  .form__owner,
+  .form__pet-info,
+  .form__radio {
+    margin: 0 auto;
+  }
+
   .form__pet {
     max-width: $desktop-width;
     margin: 0 auto;
@@ -431,8 +506,8 @@
     }
 
     &::before {
-      width: 160px;
-      left: -200px;
+      width: 800px;
+      left: -840px;
     }
   }
 
@@ -452,7 +527,7 @@
   }
 
   .form__comment {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   .form__comment textarea {
@@ -460,7 +535,7 @@
   }
 
   .form__additional-info {
-    min-height: 143px;
+    min-height: 147px;
   }
 
   .form__box {

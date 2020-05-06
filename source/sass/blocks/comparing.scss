@@ -1,0 +1,78 @@
+.comparing__range {
+  position: relative;
+  width: 26%;
+  height: 14px;
+  margin: 0 19px;
+  background-color: $color-white;
+  border: $border-input-form-hvr;
+  border-radius: 6px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 43%;
+    height: 6px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: $color-green;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comparing__range {
+    width: 428px;
+    height: 6px;
+    background-color: $range-color;
+    border: none;
+    border-radius: 2.5px;
+
+    &::before,
+    &::after {
+      top: 50%;
+      left: 50.5%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: 32px;
+      height: 32px;
+      background-color: $color-white;
+      border: $border-input-form-hvr;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::before {
+      border-color: $color-green;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $color-green;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparing__range {
+    &::before,
+    &::after {
+      left: 51%;
+    }
+  }
+}

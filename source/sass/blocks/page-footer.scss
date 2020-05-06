@@ -11,11 +11,15 @@
 .page-footer__item {
   padding: 20px 0;
   border-bottom: 1px solid #d9d9d9;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .page-footer__logo {
   padding-top: 40px;
-  padding-bottom: 27px;
+  padding-bottom: 29px;
 }
 
 .page-footer__logo-img {
@@ -33,12 +37,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 14px;
 }
 
 .page-footer__social {
   padding-top: 22px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
@@ -64,6 +69,6 @@
 
   .page-footer__copyright {
     margin-left: -11px;
-    padding-top: 14px;
+    padding-top: 10px;
   }
 }

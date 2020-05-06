@@ -1,6 +1,8 @@
 .address {
   padding-bottom: 0;
+}
 
+.address__wrapper {
   &--catalog,
   &--form {
     background-color: $bgc-grey;
@@ -19,6 +21,10 @@
   font-size: 16px;
   text-transform: uppercase;
   line-height: 1.25;
+
+  & span {
+    display: inline-block;
+  }
 }
 
 .address__item {
@@ -53,7 +59,8 @@
   }
 
   .address__item {
-    width: 139px;
+    width: 155px;
+    margin-top: 6px;
   }
 
   .address__title {
@@ -62,7 +69,8 @@
 
   .address__info {
     width: 170px;
-    min-height: 78px;
+    margin-top: 11px;
+    min-height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,6 +81,7 @@
 
   .address__street {
     margin-bottom: 16px;
+    margin-top: -5px;
   }
 
   .address__map {
@@ -83,8 +92,13 @@
 
 @media (min-width: $desktop-width) {
   .address {
+    background-color: $bgc-grey;
+  }
+
+  .address__header-wrapper {
     position: relative;
-    background-color: $color-white;
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .address__header {
@@ -92,20 +106,26 @@
     z-index: 1;
     width: 570px;
     height: 200px;
-    top: 97px;
-    left: 150px;
+    top: 95px;
+    left: 110px;
     margin: 0 auto;
     padding: 0 76px;
     background-color: $color-white;
   }
 
+  .address__item {
+    margin-top: 4px;
+  }
+
   .address__info {
+    width: 168px;
     min-height: 82px;
     text-align: left;
   }
 
   .address__street {
-    margin-bottom: 18px;
+    margin-top: 2px;
+    margin-bottom: 19px;
     line-height: 1.25;
   }
 }

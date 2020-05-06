@@ -14,12 +14,12 @@
   <div class="page-header__container">
     <a class="page-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип">
       </picture>
     </a>
-    <button class="page-header__toggle page-header__toggle--close page-header__toggle--nojs">
+    <button class="page-header__toggle page-header__toggle--close page-header__toggle--nojs" aria-label="Меню">
       <span></span>
       <span></span>
       <span></span>
@@ -94,14 +94,14 @@
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
         <ul class="form__info form__owner-info">
           <li class="form__field form__owner-items">
-            <label for="email">E-mail:*</label>
+            <label class="form__owner-email" for="email">E-mail:*</label>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
             <svg class="form__owner-item form__owner-item--email" width="18" height="14">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </li>
           <li class="form__field form__owner-items">
-            <label for="phone-number">Телефон:*</label>
+            <label class="form__owner-phone" for="phone-number">Телефон:*</label>
             <input type="tel" name="phone" id="phone-number" placeholder="8 (960) 900-60-90" required="">
             <svg class="form__owner-item form__owner-item--phone" width="21" height="21">
               <use xlink:href="#icon-phone"></use>
@@ -153,17 +153,20 @@
       </div>
     </form>
   </section>
-  <section class="address address--form">
-    <div class="address__header row">
-      <h2 class="address__item address__title">приглашаем к сотрудничеству дилеров!</h2>
-      <div class="address__item address__info">
-        <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-        <p>Санкт-Петербург</p>
+  <section class="address">
+    <div class="address__wrapper address__wrapper--form">
+      <div class="address__header-wrapper">
+        <div class="address__header row">
+          <h2 class="address__item address__title">приглашаем <span>к сотрудничеству дилеров!</span></h2>
+          <div class="address__item address__info">
+            <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p>Санкт-Петербург</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="address__map address__map--form">
-      <iframe class="address__map-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1585834926363!5m2!1sru!2slt" width="600" height="450" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-      </iframe>
+      <div class="address__map">
+        <div class="address__map-item" id="map"></div>
+      </div>
     </div>
   </section>
 </main>
@@ -176,7 +179,7 @@
       <li class="social__item social__item--vkontakte">
         <a class="social__link" href="#">
           <span class="visually-hidden">Вконтакте</span>
-          <svg width="30" height="16">
+          <svg width="22" height="12">
             <use xlink:href="#icon-vk"></use>
           </svg>
         </a>
@@ -184,7 +187,7 @@
       <li class="social__item social__item--instagram">
         <a class="social__link" href="#">
           <span class="visually-hidden">Инстаграм</span>
-          <svg width="23" height="23">
+          <svg width="16" height="16">
             <use xlink:href="#icon-insta"></use>
           </svg>
         </a>
@@ -192,7 +195,7 @@
       <li class="social__item social__item--facebook">
         <a class="social__link" href="#">
           <span class="visually-hidden">Фейсбук</span>
-          <svg width="14" height="28">
+          <svg width="10" height="19">
             <use xlink:href="#icon-fb"></use>
           </svg>
         </a>
@@ -203,13 +206,16 @@
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy</span>
         <svg width="27" height="34">
-          <use xlink:href="#icon-html-academy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </div>
 </footer>
-<script src="js/app.js"></script>
 <script src="js/picturefill.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg7G0M6FE_dV60bhU4mwvBXGFD3yApKk4&callback=initMap">
+</script>
+<script src="js/app.js"></script>
 </body>
 </html>
