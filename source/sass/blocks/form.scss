@@ -10,20 +10,10 @@
     font-size: 16px;
   }
 
-
   & input:-ms-input-placeholder,
   & textarea:-ms-input-placeholder {
     font-family: $font-family-title;
-  }
-
-  & input:-ms-input-placeholder,
-  & textarea:-ms-input-placeholder {
     text-transform: uppercase;
-  }
-
-  & input:-ms-input-placeholder,
-  & textarea:-ms-input-placeholder {
-    font-size: 16px;
   }
 
   & textarea {
@@ -471,6 +461,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__item {
+    & input:-ms-input-placeholder,
+    & textarea:-ms-input-placeholder {
+      font-size: 20px;
+    }
+  }
+
   .form__comment,
   .form__owner,
   .form__pet-info,
