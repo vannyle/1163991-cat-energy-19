@@ -39,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mapPin = {
       url: 'img/map-pin.png',
       size: new google.maps.Size(124, 106),
-      origin: new google.maps.Point(0, 0),
-      anchor: new google.maps.Point(30, 30),
-      scaledSize: new google.maps.Size(80, 70)
+      origin: new google.maps.Point(0, 0)
     };
 
     const marker = new google.maps.Marker({
