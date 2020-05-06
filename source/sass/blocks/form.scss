@@ -1,6 +1,4 @@
 .form__item {
-  border-bottom: $border-line;
-
   & input,
   & textarea,
   & input::placeholder,
@@ -30,6 +28,11 @@
       border: $border-input-form-active;
     }
   }
+}
+
+.form__radio-wrapper {
+  border-bottom: $border-line;
+  border-top: $border-line;
 }
 
 .form__owner,
@@ -216,7 +219,7 @@
   &:active,
   &:focus-within {
     border: $border-input-form-active;
-    padding-left: 19px;
+    padding-left: 13px;
   }
 
   &:active + .form__owner-item,
@@ -312,6 +315,10 @@
     & textarea::placeholder {
       font-size: 20px;
     }
+  }
+
+  .form__radio-wrapper {
+    border: none;
   }
 
   .form__item label {
