@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navMain = document.querySelector('.page-header__nav');
   const navToggle = document.querySelector('.page-header__toggle');
+  const orders = document.querySelectorAll('.order--js');
 //Get all the inputs...
   const inputs = document.querySelectorAll('input, select, textarea');
 
@@ -27,5 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     input.addEventListener('invalid', (event) => {
       input.classList.add('error');
     }, false);
+  }
+  let i;
+  for (i = 0; i < orders.length; i++) {
+    orders[i].addEventListener('click', function (e) {
+      e.preventDefault();
+      console.log(e)
+    });
   }
 });
