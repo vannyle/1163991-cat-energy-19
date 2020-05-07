@@ -22,18 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Loop through them...
-  for (let input of inputs) {
-    // Just before submit, the invalid event will fire, let's apply our class there.
-    input.addEventListener('invalid', (event) => {
-      input.classList.add('error');
-    }, false);
-  }
+
   let i;
   for (i = 0; i < orders.length; i++) {
     orders[i].addEventListener('click', function (e) {
       e.preventDefault();
       console.log(e)
     });
+  }
+
+  // Loop through them...
+  for (let input of inputs) {
+    // Just before submit, the invalid event will fire, let's apply our class there.
+    input.addEventListener('invalid', (event) => {
+      input.classList.add('error');
+    }, false);
   }
 });
