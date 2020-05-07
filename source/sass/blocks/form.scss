@@ -1,4 +1,8 @@
-.form__item {
+.form__info,
+.form__radio,
+.form__owner,
+.form__comment,
+.form__additional {
   & input,
   & textarea,
   & input::placeholder,
@@ -96,6 +100,11 @@
 .form__box {
   display: flex;
   align-items: center;
+
+  label {
+    margin-right: 15px;
+    text-transform: uppercase;
+  }
 }
 
 .form__field {
@@ -197,11 +206,6 @@
   height: 17px;
   top: 5px;
   left: 4px;
-}
-
-.form__item label {
-  margin-right: 15px;
-  text-transform: uppercase;
 }
 
 .form__info input {
@@ -306,9 +310,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__item {
-    border-bottom: none;
-
+  .form__info,
+  .form__radio,
+  .form__owner,
+  .form__comment,
+  .form__additional {
     & input,
     & textarea,
     & input::placeholder,
@@ -321,8 +327,12 @@
     border: none;
   }
 
-  .form__item label {
-    margin-right: 16px;
+  .form__field,
+  .form__tick,
+  .form__box {
+    label {
+      margin-right: 16px;
+    }
   }
 
   .form__pet-info,
@@ -468,7 +478,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__item {
+  .form__info,
+  .form__owner,
+  .form__comment {
     & input:-ms-input-placeholder,
     & textarea:-ms-input-placeholder {
       font-size: 20px;
@@ -477,7 +489,6 @@
 
   .form__comment,
   .form__owner,
-  .form__pet-info,
   .form__radio {
     margin: 0 auto;
   }
@@ -489,9 +500,14 @@
     justify-content: space-between;
     align-items: center;
 
-    & .form__item {
+    .form__info,
+    .form__radio-wrapper {
       flex-basis: 46.7%;
     }
+  }
+
+  .form__pet-info {
+    margin-left: 0;
   }
 
   .form__radio {

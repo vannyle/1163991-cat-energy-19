@@ -48,7 +48,7 @@
     </div>
     <form class="selection__form form" action="https://echo.htmlacademy.ru" method="get">
       <div class="form__pet">
-        <ul class="form__item form__info form__pet-info row">
+        <ul class="form__info form__pet-info row">
           <li class="form__field">
             <label for="pet-name">Имя:*</label>
             <input type="text" name="name" id="pet-name" placeholder="Барсик" required="">
@@ -62,33 +62,33 @@
             <input type="number" name="age" id="pet-age" placeholder="7">
           </li>
         </ul>
+        <div class="form__radio-wrapper">
+          <ul class="form__radio row">
+            <li class="form__tick">
+              <label class="form__tick-item" for="slim-program">
+                <input type="radio" name="program" value="slim" id="slim-program" checked="checked">
+                <span class="form__tick-mark"></span>
+                Похудение
+              </label>
+            </li>
+            <li class="form__tick">
+              <label class="form__tick-item" for="pro-program">
+                <input type="radio" name="program" value="pro" id="pro-program">
+                Набор массы
+                <span class="form__tick-mark"></span>
+              </label>
+            </li>
+            <li class="form__tick">
+              <label class="form__tick-item" for="others">
+                <input type="radio" name="program" value="other" id="others">
+                Не знаю (Нужен ваш совет)
+                <span class="form__tick-mark"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="form__radio-wrapper">
-        <ul class="form__item form__radio row">
-          <li class="form__tick">
-            <label class="form__tick-item" for="slim-program">
-              <input type="radio" name="program" value="slim" id="slim-program" checked="checked">
-              <span class="form__tick-mark"></span>
-              Похудение
-            </label>
-          </li>
-          <li class="form__tick">
-            <label class="form__tick-item" for="pro-program">
-              <input type="radio" name="program" value="pro" id="pro-program">
-              Набор массы
-              <span class="form__tick-mark"></span>
-            </label>
-          </li>
-          <li class="form__tick">
-            <label class="form__tick-item" for="others">
-              <input type="radio" name="program" value="other" id="others">
-              Не знаю (Нужен ваш совет)
-              <span class="form__tick-mark"></span>
-            </label>
-          </li>
-        </ul>
-      </div>
-      <div class="form__item form__owner row">
+      <div class="form__owner row">
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
         <ul class="form__info form__owner-info">
           <li class="form__field form__owner-items">
@@ -107,13 +107,13 @@
           </li>
         </ul>
       </div>
-      <div class="form__item form__comment row">
+      <div class="form__comment row">
         <h3 class="form__title form__comment-title">Комментарий</h3>
         <label class="visually-hidden" for="comment">Написать комментарий</label>
         <textarea name="comment" id="comment" cols="30" rows="5"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
-      <div class="form__item form__additional row">
+      <div class="form__additional row">
         <h3 class="form__title">Дополнительно</h3>
         <ul class="form__checkbox form__additional-info">
           <li class="form__box">
