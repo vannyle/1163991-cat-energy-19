@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navMain = document.querySelector('.page-header__nav');
-  const navToggle = document.querySelector('.page-header__toggle');
+  var navMain = document.querySelector('.page-header__nav');
+  var navToggle = document.querySelector('.page-header__toggle');
+  var showAllItems = document.querySelector('.more-items');
 //Get all the inputs...
-  const inputs = document.querySelectorAll('input, select, textarea');
+  var inputs = document.querySelectorAll('input, select, textarea');
 
   navToggle.classList.remove('page-header__toggle--nojs');
   navMain.classList.remove('page-header__nav--nojs');
@@ -21,18 +22,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  document.body.addEventListener('click', function(e) {
-    if(e.target.classList.contains('order--js')) {
+  document.body.addEventListener('click', function (e) {
+    if (e.target.classList.contains('order--js')) {
       e.preventDefault();
       alert('Модальное окно заказа');
     }
   });
 
-  // Loop through them...
-  for (let input of inputs) {
-    // Just before submit, the invalid event will fire, let's apply our class there.
-    input.addEventListener('invalid', (event) => {
-      input.classList.add('error');
+  if (showAllItems) {
+    showAllItems.addEventListener('click', function (e) {
+      if (e.target.classList.contains('more-items__button--js')) {
+        e.preventDefault();
+        alert('Показать все товары')
+      }
+    });
+  }
+
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('invalid', function (e) {
+      e.target.classList.add('error');
     }, false);
   }
 });
