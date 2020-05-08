@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var navMain = document.querySelector('.page-header__nav');
   var navToggle = document.querySelector('.page-header__toggle');
-  var showAllItems = document.querySelector('.more-items');
+  var showAllItems = document.querySelector('.more-items__button--js');
 //Get all the inputs...
   var inputs = document.querySelectorAll('input, select, textarea');
 
@@ -31,10 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (showAllItems) {
     showAllItems.addEventListener('click', function (e) {
-      if (e.target.classList.contains('more-items__button--js')) {
-        e.preventDefault();
-        alert('Показать все товары')
-      }
+      e.preventDefault();
+      alert('Показать все товары');
     });
   }
 
