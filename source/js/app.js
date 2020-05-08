@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navMain = document.querySelector('.page-header__nav');
   const navToggle = document.querySelector('.page-header__toggle');
-  const orders = document.querySelectorAll('.order--js');
 //Get all the inputs...
   const inputs = document.querySelectorAll('input, select, textarea');
 
@@ -22,14 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-
-  let i;
-  for (i = 0; i < orders.length; i++) {
-    orders[i].addEventListener('click', function (e) {
+  document.body.addEventListener('click', function(e) {
+    if(e.target.classList.contains('order--js')) {
       e.preventDefault();
-      console.log(e)
-    });
-  }
+      alert('Модальное окно заказа');
+    }
+  });
 
   // Loop through them...
   for (let input of inputs) {
