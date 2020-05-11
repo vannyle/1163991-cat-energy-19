@@ -1,4 +1,4 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url]
 
 * Студент: [Vanny Le](https://up.htmlacademy.ru/adaptive/19/user/1163991).
 * Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
