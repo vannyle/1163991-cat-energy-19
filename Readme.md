@@ -1,6 +1,6 @@
 # Personal project «Cat Energy» [![Build status][travis-image]][travis-url]
 
-### [Demo](https://vannyle.github.io/cat-energy/)/
+### [Demo](https://vannyle.github.io/cat-energy/)
 
 The project was built with HTML, CSS, Javascript, NPM, Gulp. Also, This project used the BEM approach to naming CSS components and classes.
 
