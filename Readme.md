@@ -1,6 +1,9 @@
 # Personal project «Cat Energy» [![Build status][travis-image]][travis-url]
 
-### [Demo](https://vannyle.github.io/cat-energy/)
+### [Demo](https://vannyle.github.io/cat-energy/)/
+
+The project was built with HTML, CSS, Javascript, NPM, Gulp. Also, This project used the BEM approach to naming CSS components and classes.
+
 --- 
 * Student: [Vanny Le](https://up.htmlacademy.ru/adaptive/19/user/1163991).
 * Mentor: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
